@@ -46,7 +46,6 @@ website:
         aria-label: LinkedIn
   page-footer:
     left: "© 2026 Laura Ellis · Code: MIT · Content: CC BY 4.0"
-    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
