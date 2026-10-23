@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.md
+    - "*.qmd"
+    - "skills/*.qmd"
+  resources:
+    - fonts/
+    - pdf/
+    - images/
+
+execute:
+  freeze: auto
+
+website:
+  title: "Laura Ellis"
+  site-url: https://laura-ellis.github.io
+  description: "Data analyst working at the intersection of biomedical research and data science."
+  repo-url: https://github.com/Laura-Ellis/laura-ellis.github.io
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.md
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Skills
+        menu:
+          - {href: skills/python.qmd, text: Python}
+          - {href: skills/r.qmd, text: R}
+          - {href: skills/sql.qmd, text: SQL}
+          - {href: skills/ml-dl.qmd, text: Machine Learning & Deep Learning}
+          - {href: skills/nlp-llms.qmd, text: NLP & LLMs}
+          - {href: skills/viz-bi.qmd, text: Data Visualization & BI}
+          - {href: skills/cloud-mlops.qmd, text: Cloud & MLOps}
+          - {href: skills/stats.qmd, text: Statistics & Probability}
+      - href: methods.qmd
+        text: Methods & Standards
+    right:
+      - icon: github
+        href: https://github.com/Laura-Ellis
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/laura-ellis-profile/
+        aria-label: LinkedIn
+  page-footer:
+    left: "© 2026 Laura Ellis · Code: MIT · Content: CC BY 4.0"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    css: fonts.css
+    toc: true
+    code-fold: true

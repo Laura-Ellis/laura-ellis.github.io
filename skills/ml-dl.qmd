@@ -1,0 +1,66 @@
+---
+title: "Machine Learning & Deep Learning"
+subtitle: "Models that predict research outcomes, with explanations"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: Which NIH projects lead to patents or high-impact papers?
+
+### Question
+Using only what is known when a project is funded, can we predict which projects will lead to a patent or highly cited papers?
+
+### Data
+NIH RePORTER project features, iCite Relative Citation Ratio (RCR), and PatentsView links. [Record counts]{.todo}
+
+### Method
+- Random forest and XGBoost, with a logistic regression baseline
+- Time-based split (train on earlier years, test on later) to avoid leakage
+- SHAP (SHapley Additive exPlanations) to show which features drive each prediction
+- Metrics: precision, recall, and area under the precision-recall curve (rare outcome)
+
+### Results
+[Model comparison and SHAP summary]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: Credit default model
+
+The same modeling and explanation steps applied to a public credit default dataset for finance. [Repo and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### Predictive Analytics
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/association-rules-copy)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Association Rules
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Clustering
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-3)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Naive Bayes
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-2)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Decision Tree
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-4)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Neural Network with PCA
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-5)
+:::
+:::

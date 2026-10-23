@@ -1,0 +1,37 @@
+---
+title: "Methods & Standards"
+subtitle: "How the projects are built, checked, and shared"
+---
+
+## Data science and AI taxonomy
+
+The taxonomy classifies NIH projects by the data science and AI methods they use and the research areas they apply to. [Taxonomy table: categories, subcategories, definitions, example terms]{.todo}
+
+## FAIR principles
+
+Every project repo is built to be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable:
+
+| Principle | How the repos meet it |
+|---|---|
+| Findable | Descriptive README, keywords, and `CITATION.cff` |
+| Accessible | Public data sources, documented in `data/DATA_SOURCES.md` with access dates |
+| Interoperable | Open formats (CSV, Parquet, JSON) and a data dictionary |
+| Reusable | MIT license for code, CC BY 4.0 for content, and the source terms for data |
+
+New projects start from the [Project-Setup](https://github.com/Laura-Ellis/Project-Setup) template, which includes these files.
+
+## CRediT contributor roles
+
+Contributions are described with the CRediT (Contributor Roles Taxonomy) roles. [Which roles apply to each project, including the role of AI tools]{.todo}
+
+## Validating AI output
+
+AI coding assistants and LLMs speed up cleaning, queries, and debugging. Their output is checked before it is used:
+
+- Row counts match the source
+- 10 records spot-checked by hand
+- Summary statistics recomputed independently
+- Generated SQL and code reviewed line by line
+- LLM labels compared with a hand-coded sample (Cohen's kappa reported)
+
+Each project keeps a log of prompts, errors, and fixes in `reports/ai_workflow_log.md`.

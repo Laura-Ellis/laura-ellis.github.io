@@ -1,0 +1,47 @@
+---
+title: "Python"
+subtitle: "Pipelines that turn public APIs into clean, reusable datasets"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: NIH RePORTER pipeline
+
+### Question
+How many NIH projects use data science and AI methods each year, and where are they funded?
+
+### Data
+NIH RePORTER API (projects, abstracts, RCDC categories), FY2015 to FY2026. [Record counts and access date]{.todo}
+
+### Method
+- Paginated API pull with retries and rate limiting
+- Cleaning: deduplicate by `appl_id`, standardize institute and activity codes, parse fiscal years
+- Packaged as a module (`src/reporter.py`) with tests, so the SQL, ML, and NLP pages reuse the same data
+
+### Results
+[Chart: NIH projects pulled per fiscal year, with hover and filter]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo} Full log: [`reports/ai_workflow_log.md`]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: FRED macro data pipeline
+
+The same pull, clean, and package pattern applied to Federal Reserve Economic Data (FRED) series for finance. [Repo and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### ETL
+From my 2021 portfolio.
+
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-8)
+:::
+:::

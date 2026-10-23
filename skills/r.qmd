@@ -1,0 +1,48 @@
+---
+title: "R"
+subtitle: "Statistical analysis for research questions"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: Time to completion for AI-related clinical trials
+
+### Question
+Do clinical trials that use AI reach completion faster or slower than comparable trials?
+
+### Data
+ClinicalTrials.gov API v2: start dates, completion dates, status, phase, and conditions. [Record counts and access date]{.todo}
+
+### Method
+- tidyverse for cleaning; `survival` and `survminer` for analysis
+- Kaplan-Meier curves and a Cox proportional hazards model
+- Hazard ratio (HR): HR > 1 means faster completion than the comparison group; HR < 1 means slower
+- Trials still running are censored, not dropped
+
+### Results
+[Kaplan-Meier chart with confidence bands]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: CDC PLACES county health map
+
+County-level health measures from the Centers for Disease Control and Prevention (CDC) PLACES data, mapped with `sf` for public health policy. [Repo and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### R
+Code from my 2021 portfolio.
+
+[View on GitHub](https://github.com/Laura-Ellis/R)
+:::
+:::

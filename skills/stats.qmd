@@ -1,0 +1,39 @@
+---
+title: "Statistics & Probability"
+subtitle: "Testing whether a change made a difference"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: Did the NIH Data Management & Sharing Policy change data sharing?
+
+### Question
+After the NIH Data Management and Sharing (DMS) Policy took effect in 2023, did more NIH-funded papers include data availability statements?
+
+### Data
+PubMed Central (PMC) open access papers linked to NIH projects, before and after the policy. [Record counts]{.todo}
+
+### Method
+Interrupted time series:
+
+$$Y_t = \beta_0 + \beta_1 \cdot \text{time} + \beta_2 \cdot \text{policy} + \beta_3 \cdot \text{time after policy} + \varepsilon_t$$
+
+- $\beta_2$ = immediate change in level at the policy date
+- $\beta_3$ = change in slope after the policy date
+
+### Results
+[Chart with pre- and post-policy trend lines]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: A/B test with power analysis
+
+A retail A/B test: sample size calculated before the test, then a two-proportion test and confidence interval on the result. [Repo and summary]{.todo}

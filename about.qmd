@@ -1,0 +1,24 @@
+---
+title: "About"
+subtitle: "Data analyst working at the intersection of biomedical research and data science, with experience in NIH research, research funding, and scholarly data."
+---
+
+[Professional photo]{.todo}
+
+I work in research analytics at Digital Science and have supported NIH as a contractor. My work connects research projects to what they produce: publications, citations, clinical trials, and patents. [Two or three sentences on your background, in your words]{.todo}
+
+## What I do
+
+- **Research analytics:** NIH projects, publications, clinical trials, patents, and public health data
+- **Data science:** Python, R, and SQL; machine learning, NLP, and LLMs; cloud deployment on GCP
+- **Communication:** dashboards and executive summaries that lead with the takeaway; AI-assisted workflows with validated output
+
+## How this portfolio works
+
+Each skill page has one NIH flagship project, a smaller project from another domain, and earlier work. Every project starts with a plain-language question and ends with an executive summary and a log of how AI tools were used and checked. All data is public.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/laura-ellis-profile/)
+- [GitHub](https://github.com/Laura-Ellis)
+- [Resume]{.todo}

@@ -1,0 +1,46 @@
+---
+title: "Data Visualization & BI"
+subtitle: "Dashboards and charts that lead with the takeaway"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: NIH AI investment dashboard
+
+### Question
+Where is NIH investing in AI, by institute, state, and activity code, and how is that changing?
+
+### Data
+NIH RePORTER projects labeled with the AI taxonomy from the [NLP & LLMs](nlp-llms.qmd) page. [Record counts]{.todo}
+
+### Method
+- Tableau Public dashboard with filters for fiscal year, institute (IC), and activity code
+- Action titles that state the takeaway; one highlight color, everything else neutral
+
+### Results
+[Embedded Tableau Public dashboard]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+## Same skills, other domain: Chart makeover
+
+A before-and-after redesign of one cluttered chart in matplotlib, showing each change and why. [Images and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### Tableau
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/excel-copy)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### Excel
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/blank-page-6)
+:::
+:::

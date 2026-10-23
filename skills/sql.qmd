@@ -1,0 +1,47 @@
+---
+title: "SQL"
+subtitle: "Relational models that link research inputs to outputs"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: Linking NIH projects to publications and patents in BigQuery
+
+### Question
+For each NIH project, what publications and patents followed, and how long did they take?
+
+### Data
+NIH RePORTER (projects and publication links), iCite, OpenAlex, and PatentsView, loaded into Google BigQuery. [Table sizes]{.todo}
+
+### Method
+- Relational schema: `projects` → `project_publications` → `publications`; `projects` → `patents`
+- Common table expressions (CTEs) and window functions for time to first publication and first patent
+- `COUNT(DISTINCT ...)` after every join to avoid double counting
+
+### Results
+[Schema diagram and query results]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: Retail cohort retention
+
+Monthly cohort retention on the public BigQuery `thelook_ecommerce` dataset. [Repo and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### SQL
+From my 2021 portfolio.
+
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/sas-enterprise-miner-copy-2) · [GitHub](https://github.com/Laura-Ellis/SQL)
+:::
+:::

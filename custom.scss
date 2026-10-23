@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+// Personal palette (Behr 2026), from style.py
+$primary: #596D69;          // Hidden Gem
+$body-bg: #F1EDE1;          // Blank Canvas
+$body-color: #4F5152;       // ink
+$link-color: #596D69;
+$navbar-bg: #344D58;        // Nocturne Blue
+$navbar-fg: #F1EDE1;
+$headings-color: #344D58;
+$footer-bg: #F1EDE1;
+$font-family-sans-serif: "Open Sans", Arial, sans-serif;
+
+/*-- scss:rules --*/
+.quarto-title-banner { background: #344D58 !important; color: #F1EDE1; }
+.quarto-title-banner .subtitle { color: #AEBDBB; }
+
+// Cards for skill grid and Earlier work
+div.grid > [class*="g-col"] {
+  background: #FAF7F0;
+  border: 1px solid #CDC4B7;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+div.grid h3, div.grid h4 { margin-top: 0; font-size: 1.1rem; }
+
+.btn-primary { background: #596D69; border-color: #596D69; }
+.btn-outline-primary { color: #596D69; border-color: #596D69; }
+
+// Placeholder text still to fill in
+.todo { background: #DFD2CA; color: #744245; padding: 0 .3rem; border-radius: 4px; font-size: .9em; }
+
+// Illustrative-data notice
+.callout.illustrative { border-left-color: #B06F60 !important; }

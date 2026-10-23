@@ -1,0 +1,58 @@
+---
+title: "NLP & LLMs"
+subtitle: "Turning unstructured text into labeled, validated data"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: NIH Data Science and AI Taxonomy
+
+### Question
+Where does AI show up in NIH-funded research, and what do those projects produce?
+
+### Data
+NIH RePORTER project abstracts and RCDC (Research, Condition, and Disease Categorization) categories, FY2015 to FY2026. [Record counts]{.todo}
+
+### Method
+1. **Define** a taxonomy of data science and AI methods (machine learning, deep learning, NLP, LLMs, computer vision) and research areas
+2. **Embed and cluster** abstracts to see natural groupings
+3. **Label** each project with an LLM, with a short justification per label
+4. **Validate** against a hand-coded random sample and RCDC categories
+
+Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agreement) / (1 − chance agreement). 1 = perfect, 0 = chance.
+
+### Results
+[Charts: AI-related projects over time, by institute, and by method × research area]{.todo}
+
+**Presentation:** [Impact of AI on Biomedical Research (PDF)](../pdf/impact_of_ai_biomedical_research.pdf). Charts use illustrative data until the analysis runs.
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: Public comments on an NIH policy
+
+Topic and sentiment analysis of public comments on an NIH Request for Information (RFI), for data science policy. [Repo and summary]{.todo}
+
+## Earlier work
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+#### NLP with Python: Myriad
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/sas-enterprise-miner-copy) · [GitHub](https://github.com/Laura-Ellis/Python_NLP_Myriad)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### IBM Watson: Gavi Vaccine Alliance
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/decisions-requirement-diagram-copy)
+:::
+::: {.g-col-12 .g-col-md-6}
+#### IBM Watson: PEW Research Science Issues
+[View on original site](https://lauraellis36.wixsite.com/dataportfolio/ibm-watson-gavi-vaccine-alliance-co)
+:::
+:::

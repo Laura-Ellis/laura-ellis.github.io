@@ -1,10 +1,33 @@
-# Laura Ellis
+# laura-ellis.github.io
 
-**Director of Research Analytics working at the intersection of biomedical research and data science, with experience in NIH research, research funding, and scholarly data.**
+Source for my data portfolio: [laura-ellis.github.io](https://laura-ellis.github.io)
 
-- **Research analytics:** NIH grants, publications, clinical trials, patents, and public health data (RePORTER, iCite, OpenAlex, ClinicalTrials.gov, PatentsView, CDC, WHO)
-- **Data science:** Python, R, and SQL; machine learning, NLP, and LLMs; cloud deployment on GCP
-- **Communication:** Tableau dashboards and executive summaries; AI-assisted workflows with validated output
+![Home page preview](images/demo.gif)
 
-📂 **Portfolio:** [laura-ellis.github.io](https://laura-ellis.github.io)
-💼 **LinkedIn:** [laura-ellis-profile](https://www.linkedin.com/in/laura-ellis-profile/)
+Built with [Quarto](https://quarto.org). One page per skill area, each with an NIH flagship project, a project from another domain, and earlier work.
+
+## Update the site
+
+1. Edit `.qmd` or `.md` pages.
+2. Preview locally: `quarto preview`
+3. If a page runs code, render it locally first (`quarto render`) and commit the `_freeze/` folder, so the publish step doesn't need Python or R.
+4. Push to `master`. GitHub Actions renders the site and publishes it to the `gh-pages` branch.
+
+One-time setup: in the repo's **Settings → Pages**, set the source to the `gh-pages` branch, `/ (root)`.
+
+## Layout
+
+```
+_quarto.yml        site config: navigation, theme, footer
+custom.scss        Personal palette (Behr 2026) and card styles
+fonts.css, fonts/  Open Sans (SIL Open Font License, fonts/OFL.txt)
+index.md           home page
+about.qmd          about
+methods.qmd        taxonomy, FAIR, CRediT, AI validation
+skills/            one page per skill area
+pdf/, images/      presentation and preview GIF
+```
+
+## License
+
+Code: MIT ([`LICENSE`](LICENSE)). Written content, figures, and images: CC BY 4.0 ([`LICENSE-CONTENT.md`](LICENSE-CONTENT.md)). Data keeps each source's terms.

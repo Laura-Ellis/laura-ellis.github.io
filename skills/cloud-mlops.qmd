@@ -1,0 +1,37 @@
+---
+title: "Cloud & MLOps"
+subtitle: "Deploying, refreshing, and monitoring models"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
+:::
+
+## Flagship: Deploying the AI taxonomy classifier
+
+### Question
+Can the taxonomy label new NIH projects automatically as they are funded, and stay accurate over time?
+
+### Data
+New NIH RePORTER projects, pulled on a schedule. [Refresh frequency]{.todo}
+
+### Method
+- Classifier served as an API on Google Cloud Platform (GCP) Cloud Run
+- Scheduled data refresh
+- MLflow for experiment tracking and model versions
+- Drift checks: compare new label distributions with the validated baseline
+
+### Results
+[Architecture diagram and monitoring chart]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
+## Same skills, other domain: Continuous integration
+
+GitHub Actions running tests on every push, applied to the portfolio's own code. [Repo and summary]{.todo}
