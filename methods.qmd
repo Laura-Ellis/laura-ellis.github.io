@@ -3,9 +3,22 @@ title: "Methods & Standards"
 subtitle: "How the projects are built, checked, and shared"
 ---
 
-## Data science and AI taxonomy
+## NIH Data Science Taxonomy
 
-The taxonomy classifies NIH projects by the data science and AI methods they use and the research areas they apply to. [Taxonomy table: categories, subcategories, definitions, example terms]{.todo}
+The taxonomy classifies NIH projects by the data science methods they use (statistics and analytics, computational modeling, and AI), the software and infrastructure they build, how they manage and share data, responsible AI, workforce, and the biomedical area. Its dimensions follow the five goals of the NIH Strategic Plan for Data Science, 2025–2030.
+
+| Dimension | Categories |
+|---|---|
+| Data science methods | Statistics and analytics (5) · Computational modeling (1) · Artificial intelligence (6) |
+| Software and tools | 4 |
+| Data infrastructure and computing | 4 |
+| Data management and sharing | 3 |
+| Responsible AI | 3 |
+| Workforce and training | 2 |
+| Biomedical application area | 8 |
+| Role of AI (LLM review) | 4 |
+
+Definitions and terms: [nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy). Tested on 749 NIH projects: the keyword labels find 98% of projects in NIH's RCDC AI category.
 
 ## FAIR principles
 

@@ -13,7 +13,7 @@ subtitle: "Dashboards and charts that lead with the takeaway"
 Where is NIH investing in AI, by institute, state, and activity code, and how is that changing?
 
 ### Data
-NIH RePORTER projects labeled with the AI taxonomy from the [NLP & LLMs](nlp-llms.qmd) page. [Record counts]{.todo}
+NIH RePORTER projects labeled with the data science taxonomy from the [NLP & LLMs](nlp-llms.qmd) page. [Record counts]{.todo}
 
 ### Method
 - Tableau Public dashboard with filters for fiscal year, institute (IC), and activity code
@@ -27,6 +27,10 @@ NIH RePORTER projects labeled with the AI taxonomy from the [NLP & LLMs](nlp-llm
 
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+## NIH data science KPIs
+
+A dashboard of 28 proposed KPIs for the five goals of the NIH Strategic Plan for Data Science, 2025–2030, built from public data. [See the project](../projects/nih-ds-kpis.qmd)
 
 ## Infrastructure: Is NIH funding the foundations AI needs?
 

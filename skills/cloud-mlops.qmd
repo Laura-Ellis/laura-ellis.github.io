@@ -7,7 +7,7 @@ subtitle: "Deploying, refreshing, and monitoring models"
 **In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
 :::
 
-## Flagship: Deploying the AI taxonomy classifier
+## Flagship: Deploying the data science taxonomy classifier
 
 ### Question
 Can the taxonomy label new NIH projects automatically as they are funded, and stay accurate over time?

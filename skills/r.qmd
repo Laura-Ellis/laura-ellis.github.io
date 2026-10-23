@@ -38,7 +38,7 @@ ClinicalTrials.gov API v2: start dates, completion dates, status, phase, and con
 After an NIH career development award, do researchers trained in AI and data science reach their first independent research project faster than other awardees?
 
 ### Data
-NIH RePORTER training and career projects (activity codes T, F, K, and R25), with the AI taxonomy applied to abstracts. Later projects matched by principal investigator profile ID. [Record counts]{.todo}
+NIH RePORTER training and career projects (activity codes T, F, K, and R25), with the data science taxonomy applied to abstracts. Later projects matched by principal investigator profile ID. [Record counts]{.todo}
 
 ### Method
 - Cohort: K award recipients, grouped as AI-focused or other by the taxonomy

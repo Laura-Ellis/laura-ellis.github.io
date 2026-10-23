@@ -5,6 +5,7 @@ project:
     - index.md
     - "*.qmd"
     - "skills/*.qmd"
+    - "projects/*.qmd"
   resources:
     - fonts/
     - pdf/
@@ -35,6 +36,8 @@ website:
           - {href: skills/viz-bi.qmd, text: Data Visualization & BI}
           - {href: skills/cloud-mlops.qmd, text: Cloud & MLOps}
           - {href: skills/stats.qmd, text: Statistics & Probability}
+      - href: projects/nih-ds-kpis.qmd
+        text: NIH Data Science KPIs
       - href: methods.qmd
         text: Methods & Standards
     right:

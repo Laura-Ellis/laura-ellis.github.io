@@ -1,0 +1,69 @@
+---
+title: "NIH Data Science KPIs"
+subtitle: "Is NIH making progress on its data science strategy? Indicators from public data"
+---
+
+::: {.callout-note appearance="simple"}
+**In progress.** KPI definitions and code are done; values will appear once the NIH ExPORTER files are processed. Text marked [like this]{.todo} is still to come.
+:::
+
+## Question
+Is NIH making progress on the five goals of its Strategic Plan for Data Science, 2025–2030, and how would we know from public data alone?
+
+## Data
+- NIH ExPORTER: projects, abstracts, publication links, patents, and clinical studies, FY2015–FY2025 (FY2008+ for investigator history)
+- [NIH Data Science Taxonomy](../skills/nlp-llms.qmd) labels for data science and AI
+- Europe PMC, DataCite, iCite, and OpenAlex for papers, datasets, citations, and open access
+
+## Method
+The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each maps to a goal, uses a public source, and has a written formula and caveats. 23 come from NIH ExPORTER plus the taxonomy; 5 need other public APIs.
+
+- **Shares** = numerator / denominator, by fiscal year and Institute or Center (IC). Example: C1 = data science projects / all NIH projects
+- **Funding** = total cost in nominal USD, excluding subprojects; intramural (Z) and contract (N) projects excluded from denominators
+- **Outcomes** compare data science projects with other projects in the same fiscal year
+
+| ID | KPI | Goal | Source |
+|---|---|---|---|
+| C1 | Data science share of NIH projects | Context | NIH ExPORTER + taxonomy |
+| C2 | Data science share of NIH funding | Context | NIH ExPORTER + taxonomy |
+| C3 | AI share of data science projects | Context | NIH ExPORTER + taxonomy |
+| C4 | RCDC Machine Learning and AI funding | Context | NIH ExPORTER + taxonomy |
+| C5 | Data science method mix | Context | NIH ExPORTER + taxonomy |
+| G1.1 | Data management and sharing in data science projects | Goal 1: Data management and sharing | NIH ExPORTER + taxonomy |
+| G1.2 | Papers with a data availability statement | Goal 1: Data management and sharing | Europe PMC full-text open access subset |
+| G1.3 | Datasets crediting NIH | Goal 1: Data management and sharing | DataCite REST API (fundingReferences) |
+| G2.1 | Projects using human-derived data resources | Goal 2: Human-derived data | NIH ExPORTER + taxonomy |
+| G2.2 | Projects naming NIH human data resources | Goal 2: Human-derived data | NIH ExPORTER + taxonomy |
+| G3.1 | Research software projects | Goal 3: Software, computational methods, and AI | NIH ExPORTER + taxonomy |
+| G3.2 | Papers that share code | Goal 3: Software, computational methods, and AI | Europe PMC full-text open access subset |
+| G3.3 | Generative AI projects | Goal 3: Software, computational methods, and AI | NIH ExPORTER + taxonomy |
+| G3.4 | Responsible AI share | Goal 3: Software, computational methods, and AI | NIH ExPORTER + taxonomy |
+| G3.5 | Computational modeling and digital twins | Goal 3: Software, computational methods, and AI | NIH ExPORTER + taxonomy |
+| G4.1 | Infrastructure share of data science funding | Goal 4: Federated data infrastructure | NIH ExPORTER + taxonomy |
+| G4.2 | Projects naming NIH data platforms | Goal 4: Federated data infrastructure | NIH ExPORTER + taxonomy |
+| G4.3 | Cloud and high-performance computing projects | Goal 4: Federated data infrastructure | NIH ExPORTER + taxonomy |
+| G5.1 | Data science share of training projects | Goal 5: Data science community | NIH ExPORTER + taxonomy |
+| G5.2 | Transition from career award to independence | Goal 5: Data science community | NIH ExPORTER + taxonomy |
+| G5.3 | Breadth of institutions doing data science | Goal 5: Data science community | NIH ExPORTER + taxonomy |
+| G5.4 | New investigators in data science | Goal 5: Data science community | NIH ExPORTER + taxonomy |
+| G5.5 | Data science capacity-building projects | Goal 5: Data science community | NIH ExPORTER + taxonomy |
+| O1 | Publications per data science project | Outcomes | NIH ExPORTER + taxonomy |
+| O2 | Citation impact of data science papers | Outcomes | iCite API |
+| O3 | Open access share of data science papers | Outcomes | OpenAlex (open_access.is_oa) by PMID |
+| O4 | Clinical trial link rate | Outcomes | NIH ExPORTER + taxonomy |
+| O5 | Patent link rate | Outcomes | NIH ExPORTER + taxonomy |
+
+**Abbreviations:** RCDC = Research, Condition, and Disease Categorization; RCR = Relative Citation Ratio; DMS = Data Management and Sharing; IDeA = Institutional Development Award states; EHR = electronic health record.
+
+## Results
+[Dashboard: Tableau Public, with KPI cards by goal, trends, and IC filter]{.todo}
+
+[Interactive KPI trend charts]{.todo}
+
+## Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+## AI workflow log
+AI drafted the KPI list and code; I checked the plan's text for any published metrics (there are none beyond software sustainability), wrote unit tests for the KPI math, and ran the pipeline on mock data before real data. Full log: [reports/ai_workflow_log.md](https://github.com/Laura-Ellis/nih-ds-kpis/blob/main/reports/ai_workflow_log.md).
+
+[Repo: nih-ds-kpis](https://github.com/Laura-Ellis/nih-ds-kpis)

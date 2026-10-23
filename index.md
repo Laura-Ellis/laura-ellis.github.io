@@ -13,9 +13,9 @@ I connect NIH projects, publications, clinical trials, and patents to answer the
 ## Featured project
 
 ::: {.callout-note appearance="simple" icon="false"}
-### NIH Data Science and AI Taxonomy
+### NIH Data Science Taxonomy
 
-How much does NIH invest in data science and AI, and where? I built a taxonomy of data science and AI methods and applied it to NIH project abstracts with embeddings, clustering, and LLM labeling, then validated the labels against a hand-coded sample and NIH's RCDC categories.
+Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy of data science methods, software, infrastructure, data sharing, and workforce, aligned with NIH's data science strategy, and tested it on 749 NIH projects against NIH's RCDC categories.
 
 [See the project](skills/nlp-llms.qmd)
 :::
@@ -46,7 +46,7 @@ Which projects lead to patents or high-impact papers? Random forest, XGBoost, an
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ### [NLP & LLMs](skills/nlp-llms.qmd)
-Data science and AI taxonomy for NIH project abstracts.
+NIH Data Science Taxonomy applied to project abstracts.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
@@ -62,6 +62,11 @@ Taxonomy classifier deployed on GCP Cloud Run with scheduled refresh and drift c
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ### [Statistics & Probability](skills/stats.qmd)
 Did the NIH Data Management & Sharing Policy change how often papers share data?
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [NIH Data Science KPIs](projects/nih-ds-kpis.qmd)
+28 indicators for NIH's data science strategy, built from public data.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}

@@ -7,13 +7,13 @@ subtitle: "Turning unstructured text into labeled, validated data"
 **In progress.** This page fills in as the project runs. Text marked [like this]{.todo} is still to come.
 :::
 
-## Flagship: NIH Data Science and AI Taxonomy
+## Flagship: NIH Data Science Taxonomy
 
 ### Question
 Where does AI show up in NIH-funded research, and what do those projects produce?
 
 ### Data
-NIH RePORTER project abstracts and RCDC (Research, Condition, and Disease Categorization) categories, FY2015 to FY2026. [Record counts]{.todo}
+NIH RePORTER project abstracts and RCDC (Research, Condition, and Disease Categorization) categories, FY2015 to FY2026. Taxonomy tested on a stratified sample of 749 projects (FY2019, FY2022, FY2025). [Full record counts]{.todo}
 
 ### Method
 1. **Define** a taxonomy of data science and AI methods (machine learning, deep learning, NLP, LLMs, computer vision) and research areas
@@ -36,7 +36,7 @@ Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agre
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}
 
-[Repo]{.todo}
+[Taxonomy repo: nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy)
 
 ## Same skills, other domain: Public comments on an NIH policy
 
