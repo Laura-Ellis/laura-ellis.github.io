@@ -1,8 +1,8 @@
 # Laura Ellis
 
-**Director of Research Analytics turning research funding data into decisions at the intersection of NIH biomedical research and data science.**
+**Director of Research Analytics turning complex data into decisions, with experience in NIH biomedical research, research funding, and scholarly data.**
 
-- **Research analytics:** NIH grants, publications, clinical trials, and patents (RePORTER, iCite, ClinicalTrials.gov, PatentsView)
+- **Research analytics:** NIH grants, publications, clinical trials, patents, and public health data (RePORTER, iCite, OpenAlex, ClinicalTrials.gov, PatentsView, CDC, WHO)
 - **Data science:** Python, R, and SQL; machine learning, NLP, and LLMs; cloud deployment on GCP
 - **Communication:** Tableau dashboards and executive summaries; AI-assisted workflows with validated output
 
