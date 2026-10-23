@@ -26,6 +26,8 @@ Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agre
 ### Results
 [Charts: AI-related projects over time, by institute, and by method × research area]{.todo}
 
+**Generative AI:** [Chart: projects using LLMs or generative AI by fiscal year, and how they use them (analyze or annotate data, study generative AI itself, clinical notes and records, writing and coding support)]{.todo}
+
 **Presentation:** [Impact of AI on Biomedical Research (PDF)](../pdf/impact_of_ai_biomedical_research.pdf). Charts use illustrative data until the analysis runs.
 
 ### Executive summary

@@ -28,6 +28,27 @@ NIH RePORTER projects labeled with the AI taxonomy from the [NLP & LLMs](nlp-llm
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}
 
+## Infrastructure: Is NIH funding the foundations AI needs?
+
+### Question
+How much NIH funding goes to the data, compute, and standards that AI depends on, compared with AI applications?
+
+### Data
+NIH RePORTER projects labeled by the taxonomy as infrastructure (data repositories and commons, cloud and compute, standards, software tools) or application. [Record counts]{.todo}
+
+### Method
+- Tableau Public view of infrastructure vs. application funding by fiscal year and institute
+- Ratio = infrastructure funding / AI application funding, per institute and year
+
+### Results
+[Embedded Tableau Public view]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
 ## Same skills, other domain: Chart makeover
 
 A before-and-after redesign of one cluttered chart in matplotlib, showing each change and why. [Images and summary]{.todo}

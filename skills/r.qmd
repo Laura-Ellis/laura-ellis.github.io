@@ -32,6 +32,33 @@ ClinicalTrials.gov API v2: start dates, completion dates, status, phase, and con
 
 [Repo]{.todo}
 
+## Workforce: Do AI-trained researchers reach independence sooner?
+
+### Question
+After an NIH career development award, do researchers trained in AI and data science reach their first independent research project faster than other awardees?
+
+### Data
+NIH RePORTER training and career projects (activity codes T, F, K, and R25), with the AI taxonomy applied to abstracts. Later projects matched by principal investigator profile ID. [Record counts]{.todo}
+
+### Method
+- Cohort: K award recipients, grouped as AI-focused or other by the taxonomy
+- Event: first independent research project (R01 or equivalent)
+- Kaplan-Meier curves and a Cox proportional hazards model, adjusting for institute and award year
+- Researchers without an R01 yet are censored at the data cutoff, not dropped
+
+Also reported: the share of training projects (T, F, K, R25) with AI or data science content, by fiscal year and institute.
+
+### Results
+[Kaplan-Meier chart and share-of-training chart]{.todo}
+
+### Executive summary
+[Three takeaways for a non-technical reader]{.todo}
+
+### AI workflow log
+[Prompts used, what the AI got wrong, how the output was checked]{.todo}
+
+[Repo]{.todo}
+
 ## Same skills, other domain: CDC PLACES county health map
 
 County-level health measures from the Centers for Disease Control and Prevention (CDC) PLACES data, mapped with `sf` for public health policy. [Repo and summary]{.todo}
