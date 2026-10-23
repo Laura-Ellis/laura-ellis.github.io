@@ -1,33 +1,10 @@
-## Portfolio Landing Page
+# Laura Ellis
 
-### Introduction
+**Director of Research Analytics turning research funding data into decisions at the intersection of NIH biomedical research and data science.**
 
-Data science portfolio based on a Minimal Jekyll theme for GitHub Pages.
+- **Research analytics:** NIH grants, publications, clinical trials, and patents (RePORTER, iCite, ClinicalTrials.gov, PatentsView)
+- **Data science:** Python, R, and SQL; machine learning, NLP, and LLMs; cloud deployment on GCP
+- **Communication:** Tableau dashboards and executive summaries; AI-assisted workflows with validated output
 
-
-
-### Markdown Notes
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
+📂 **Portfolio:** [laura-ellis.github.io](https://laura-ellis.github.io)
+💼 **LinkedIn:** [laura-ellis-profile](https://www.linkedin.com/in/laura-ellis-profile/)
