@@ -45,7 +45,7 @@ website:
         href: https://www.linkedin.com/in/laura-ellis-profile/
         aria-label: LinkedIn
   page-footer:
-    left: "© 2026 Laura Ellis · Code: MIT · Content: CC BY 4.0"
+    left: "© 2026 Laura Ellis"
 
 format:
   html:
