@@ -15,7 +15,7 @@ I connect NIH projects, publications, clinical trials, and patents to answer the
 ::: {.callout-note appearance="simple" icon="false"}
 ### NIH Data Science Taxonomy
 
-Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy of data science methods, software, infrastructure, data sharing, and workforce, aligned with NIH's data science strategy, and tested it on 749 NIH projects against NIH's RCDC categories.
+Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy aligned with NIH's data science strategy and applied it to 246,754 NIH project records from FY2016–FY2025. AI grew from 2.1% to 7.7% of projects and to $3.2B in extramural funding; the labels agree with hand coding at κ = 0.92.
 
 [See the project](skills/nlp-llms.qmd)
 :::
@@ -46,7 +46,7 @@ Which projects lead to patents or high-impact papers? Random forest, XGBoost, an
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ### [NLP & LLMs](skills/nlp-llms.qmd)
-NIH Data Science Taxonomy applied to project abstracts.
+NIH Data Science Taxonomy applied to 246,754 project records.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}

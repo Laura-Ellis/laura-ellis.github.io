@@ -13,25 +13,36 @@ subtitle: "Turning unstructured text into labeled, validated data"
 Where does AI show up in NIH-funded research, and what do those projects produce?
 
 ### Data
-NIH RePORTER project abstracts and RCDC (Research, Condition, and Disease Categorization) categories, FY2015 to FY2026. Taxonomy tested on a stratified sample of 749 projects (FY2019, FY2022, FY2025). [Full record counts]{.todo}
+NIH ExPORTER project records and abstracts, FY2016–FY2025: 246,754 records (parent projects and subprojects, each counted once). Taxonomy tested on a stratified sample of 749 projects (FY2019, FY2022, FY2025) and validated on 150 hand-coded projects.
 
 ### Method
-1. **Define** a taxonomy of data science and AI methods (machine learning, deep learning, NLP, LLMs, computer vision) and research areas
-2. **Embed and cluster** abstracts to see natural groupings
-3. **Label** each project with an LLM, with a short justification per label
-4. **Validate** against a hand-coded random sample and RCDC categories
+1. **Define** a taxonomy of 706 terms in 36 categories: data science and AI methods, software, infrastructure, data sharing, responsible AI, workforce, and research areas
+2. **Flag** projects with keywords (1 strong term or 2 weak terms): 50,481 of 246,754 records
+3. **Label** each flagged project with Jev (typed questions with probabilities): substantive, mention, or none, plus AI role and categories
+4. **Resolve** calls under 90% confidence with ChatGPT (GPT-6 Luna): 29,671 texts, about $21 in total
+5. **Validate** against 150 hand-coded projects and RCDC (Research, Condition, and Disease Categorization) categories
 
-Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agreement) / (1 − chance agreement). 1 = perfect, 0 = chance.
+Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agreement) / (1 − chance agreement). 1 = perfect, 0 = chance. The pipeline reaches κ = 0.92 for AI and 0.86 for data science against hand coding.
 
 ### Results
-[Charts: AI-related projects over time, by institute, and by method × research area]{.todo}
+AI went from 2.1% of NIH project records in FY2016 to 7.7% in FY2025, and from $626M to $3.2B in extramural funding (8.5% of the total).
 
-**Generative AI:** [Chart: projects using LLMs or generative AI by fiscal year, and how they use them (analyze or annotate data, study generative AI itself, clinical notes and records, writing and coding support)]{.todo}
+![](../images/ai_share_trend.png){fig-alt="Line chart: AI share of NIH projects rose from 2.1% in FY2016 to 7.7% in FY2025; AI share of extramural funding rose to 8.5%; data science share of projects rose from 12.5% to 20.7%."}
 
-**Presentation:** [Impact of AI on Biomedical Research (PDF)](../pdf/impact_of_ai_biomedical_research.pdf). Charts use illustrative data until the analysis runs.
+![](../images/ai_by_institute.png){fig-alt="Bar chart of extramural AI funding FY2016–2025 by institute: NCI $2.1B, NIA $1.9B, NIMH $1.8B with the highest share among the top five at 10.9%."}
+
+![](../images/ai_method_area.png){fig-alt="Heatmap of AI method by research area: machine learning everywhere, computer vision concentrated in imaging, NLP in clinical care and EHR."}
+
+**Generative AI:** Projects using generative AI or large language models doubled from 149 in FY2023 to 296 in FY2025, while AI overall grew 11%. About half develop new generative methods (52%) and 40% apply them; imaging and clinical care are the most common areas.
+
+![](../images/genai_by_fy.png){fig-alt="Bar chart: generative AI projects by fiscal year, 23 in FY2016 rising to 296 in FY2025."}
+
+**Presentation:** [Impact of AI on Biomedical Research (PDF)](../pdf/impact_of_ai_biomedical_research.pdf).
 
 ### Executive summary
-[Three takeaways for a non-technical reader]{.todo}
+- **AI is growing fast but is still a small slice.** About 1 in 13 NIH projects used AI in FY2025, up from 1 in 48 in FY2016.
+- **Most projects apply AI rather than build it.** 70% use existing methods; 21% develop new ones.
+- **AI projects publish more.** Compared with matched projects from the same institute, activity code, year, and size, AI projects have a median of 12 linked papers vs. 8. Citation impact, patents, and trials are next.
 
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}

@@ -18,7 +18,7 @@ The taxonomy classifies NIH projects by the data science methods they use (stati
 | Biomedical application area | 8 |
 | Role of AI (LLM review) | 4 |
 
-Definitions and terms: [nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy). Tested on 749 NIH projects: the keyword labels find 98% of projects in NIH's RCDC AI category.
+Definitions and terms: [nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy). Tested on 749 NIH projects: the keyword labels find 98% of projects in NIH's RCDC AI category. Applied to FY2016–FY2025 in three stages: keywords flag candidates, Jev labels them, and ChatGPT resolves low-confidence calls. Agreement with 150 hand-coded projects: κ = 0.92 for AI and 0.86 for data science. Full method: [METHODOLOGY.md](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/METHODOLOGY.md).
 
 ## FAIR principles
 

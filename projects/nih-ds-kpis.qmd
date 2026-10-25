@@ -4,7 +4,7 @@ subtitle: "Is NIH making progress on its data science strategy? Indicators from 
 ---
 
 ::: {.callout-note appearance="simple"}
-**In progress.** KPI definitions and code are done; values will appear once the NIH ExPORTER files are processed. Text marked [like this]{.todo} is still to come.
+**In progress.** The context KPIs and generative AI (G3.3) have values from FY2016–FY2025; the rest follow as their notebooks run. Text marked [like this]{.todo} is still to come.
 :::
 
 ## Question
@@ -56,12 +56,28 @@ The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each ma
 **Abbreviations:** RCDC = Research, Condition, and Disease Categorization; RCR = Relative Citation Ratio; DMS = Data Management and Sharing; IDeA = Institutional Development Award states; EHR = electronic health record.
 
 ## Results
-[Dashboard: Tableau Public, with KPI cards by goal, trends, and IC filter]{.todo}
+First values, NIH extramural and intramural records, FY2016 to FY2025:
+
+| ID | KPI | FY2016 | FY2025 |
+|---|---|---|---|
+| C1 | Data science share of NIH projects | 12.5% | 20.7% |
+| C2 | Data science share of NIH extramural funding | 17.1% | 24.4% |
+| C3 | AI share of data science projects | 16.5% | 37.2% |
+| G3.3 | Generative AI projects | 23 | 296 |
+| O1 | Median papers per project, AI vs. matched (projects starting FY2016–2020) | 12 vs. 8 | |
+
+Formulas: C1 = substantive data science records / all records; C2 = extramural attributed cost of data science records / all extramural attributed cost; C3 = substantive AI records / substantive data science records.
+
+![](../images/ai_share_trend.png){fig-alt="Line chart: data science share of NIH projects rose from 12.5% to 20.7%, and AI from 2.1% to 7.7%, FY2016 to FY2025."}
+
+[Dashboard: Tableau Public, with KPI cards by goal, trends, and filters for taxonomy group and IC]{.todo}
 
 [Interactive KPI trend charts]{.todo}
 
 ## Executive summary
-[Three takeaways for a non-technical reader]{.todo}
+- **Data science is now a fifth of NIH projects**, up from an eighth in FY2016, and a quarter of extramural funding.
+- **AI drives most of the growth.** AI went from 1 in 6 data science projects to more than 1 in 3.
+- **Generative AI is small but doubling.** 296 projects in FY2025, twice the FY2023 count.
 
 ## AI workflow log
 AI drafted the KPI list and code; I checked the plan's text for any published metrics (there are none beyond software sustainability), wrote unit tests for the KPI math, and ran the pipeline on mock data before real data. Full log: [reports/ai_workflow_log.md](https://github.com/Laura-Ellis/nih-ds-kpis/blob/main/reports/ai_workflow_log.md).
