@@ -11,9 +11,9 @@ Built with [Quarto](https://quarto.org). One page per skill area, each with an N
 1. Edit `.qmd` or `.md` pages.
 2. Preview locally: `quarto preview`
 3. If a page runs code, render it locally first (`quarto render`) and commit the `_freeze/` folder, so the publish step doesn't need Python or R.
-4. Push to `master`. GitHub Actions renders the site and publishes it to the `gh-pages` branch.
+4. Push to `master`. GitHub Actions renders the site and deploys it to GitHub Pages.
 
-One-time setup: in the repo's **Settings → Pages**, set the source to the `gh-pages` branch, `/ (root)`.
+One-time setup: in the repo's **Settings → Pages**, set the source to **GitHub Actions**.
 
 ## Layout
 
