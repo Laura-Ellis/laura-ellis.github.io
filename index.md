@@ -6,7 +6,9 @@ title-block-banner: true
 toc: false
 ---
 
-I connect NIH projects, publications, clinical trials, and patents to answer the questions funders and executives ask. Each portfolio project below starts with a plain-language question, shows the code, and ends with an executive summary and a log of how AI tools helped and how I checked their output.
+I turn messy, linked data into answers people can act on. I build pipelines in Python, R, and SQL, train and test machine learning and NLP models, and present the results as dashboards, reports, and briefings for technical and executive audiences.
+
+My current work is in research impact and bibliometrics. I connect NIH projects to the publications, clinical trials, and patents they produce to show funders where their money goes and what comes of it. Each project below starts with a plain-language question, shows the code, and ends with an executive summary and a log of how AI tools helped and how I checked their output.
 
 [About me](about.qmd){.btn .btn-primary} [GitHub](https://github.com/Laura-Ellis){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/laura-ellis-profile/){.btn .btn-outline-primary}
 
