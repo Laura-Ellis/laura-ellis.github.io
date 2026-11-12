@@ -17,7 +17,7 @@ execute:
 website:
   title: "Laura Ellis"
   site-url: https://laura-ellis.github.io
-  description: "Data analyst working at the intersection of biomedical research and data science."
+  description: "Data analyst with a master's in data analytics and 10+ years of data work in biomedical research, research funding, and AI."
   repo-url: https://github.com/Laura-Ellis/laura-ellis.github.io
   page-navigation: true
   navbar:

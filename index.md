@@ -1,6 +1,6 @@
 ---
 title: "Laura Ellis"
-subtitle: "Data analyst working at the intersection of biomedical research and data science, with experience in NIH research, research funding, and scholarly data."
+subtitle: "Data analyst with a master's in data analytics, 10+ years of data work, and deep experience in biomedical research and research funding. I understand how predictive, machine learning, NLP, generative AI, and System One decision models (such as Jev) work, so I know what to check before trusting their output."
 page-layout: full
 title-block-banner: true
 toc: false
