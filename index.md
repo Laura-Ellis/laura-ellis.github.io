@@ -6,9 +6,9 @@ title-block-banner: true
 toc: false
 ---
 
-I turn messy, linked data into answers people can act on. I build pipelines in Python, R, and SQL, train and test machine learning and NLP models, and present the results as dashboards, reports, and briefings for technical and executive audiences.
+I turn messy, linked data into answers people can act on. I write pipelines in Python, R, and SQL, build and tune predictive and NLP models, and present the results in Tableau dashboards, reports, and briefings for technical and executive audiences.
 
-My current work is in research impact and bibliometrics. I connect NIH projects to the publications, clinical trials, and patents they produce to show funders where their money goes and what comes of it. Each project below starts with a plain-language question, shows the code, and ends with an executive summary and a log of how AI tools helped and how I checked their output.
+My current work is in research impact and bibliometrics. I lead a small team as lead analyst on a multi-year project measuring how data science shapes a research funder's portfolio. I connect projects to the publications, clinical trials, and patents they produce to show funders where their money goes and what comes of it. Each project below starts with a plain-language question, shows the code, and ends with an executive summary and a log of how AI tools helped and how I checked their output.
 
 [About me](about.qmd){.btn .btn-primary} [GitHub](https://github.com/Laura-Ellis){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/laura-ellis-profile/){.btn .btn-outline-primary}
 
@@ -22,65 +22,101 @@ Where does data science show up across NIH projects, and how much of it is AI? I
 [See the project](skills/nlp-llms.qmd)
 :::
 
-## Skills
+## Selected work
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Python](skills/python.qmd)
-NIH RePORTER API pipeline, FY2015 to FY2026, packaged as a reusable module.
+### Funder portfolio impact
+Lead analyst on a multi-year project measuring how data science investment shapes a research funder's portfolio, with a small team.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [R](skills/r.qmd)
-Survival analysis of time to completion for AI-related clinical trials.
+### [Data strategy & KPIs](projects/nih-ds-kpis.qmd)
+28 indicators that track progress on NIH's data science strategy, built from public data.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [SQL](skills/sql.qmd)
-BigQuery schema linking projects to publications to patents.
+### [AI evaluation](methods.qmd)
+How I check LLM output before it reaches a decision maker: hand-coded samples, agreement scores (Cohen's κ), and an AI workflow log.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Machine Learning & Deep Learning](skills/ml-dl.qmd)
-Which projects lead to patents or high-impact papers? Random forest, XGBoost, and SHAP.
+### [Predictive analytics](skills/ml-dl.qmd)
+Built and tuned predictive models: decision trees, naive Bayes, clustering, association rules, and neural networks with principal component analysis (PCA).
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [NLP & LLMs](skills/nlp-llms.qmd)
-NIH Data Science Taxonomy applied to 246,754 project records.
+### Process improvement: Six Sigma Green Belt
+Certified in Six Sigma process improvement using DMAIC (Define, Measure, Analyze, Improve, Control).
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Data Visualization & BI](skills/viz-bi.qmd)
-Tableau Public dashboard of NIH AI investment by institute, state, and activity code.
+### Customer experience: Philips Healthcare
+Customer satisfaction survey for Philips Healthcare using Net Promoter Score (NPS = % promoters − % detractors).
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Cloud & MLOps](skills/cloud-mlops.qmd)
-Taxonomy classifier deployed on GCP Cloud Run with scheduled refresh and drift checks.
+### Market research: biotech equipment
+Market sizing and lead generation for biotech equipment sales.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Statistics & Probability](skills/stats.qmd)
-Did the NIH Data Management & Sharing Policy change how often papers share data?
+### Beyond research data
+The same methods on other domains: [economic data pipeline](skills/python.qmd) (FRED), [retail cohort retention](skills/sql.qmd), [county health map](skills/r.qmd) (CDC PLACES), [credit default model](skills/ml-dl.qmd), and an [A/B test with power analysis](skills/stats.qmd).
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [NIH Data Science KPIs](projects/nih-ds-kpis.qmd)
-28 indicators for NIH's data science strategy, built from public data.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### [Methods & Standards](methods.qmd)
-Taxonomy, FAIR principles, CRediT roles, and how I validate AI output.
+## Toolkit
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [Python](skills/python.qmd)
+API pipelines packaged as reusable modules.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [R](skills/r.qmd)
+Survival analysis and geographic mapping.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [SQL](skills/sql.qmd)
+BigQuery schemas linking grants, papers, and patents.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [Machine Learning & Deep Learning](skills/ml-dl.qmd)
+Random forest, XGBoost, and SHAP explanations.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [NLP & LLMs](skills/nlp-llms.qmd)
+Taxonomy classification of 246,754 records.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [Data Visualization & BI](skills/viz-bi.qmd)
+Tableau dashboards, Tableau Public, and executive charts.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [Cloud & MLOps](skills/cloud-mlops.qmd)
+GCP Cloud Run deployment with drift checks.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+#### [Statistics & Probability](skills/stats.qmd)
+Policy evaluation and experiment design.
 :::
 
 :::
 
 ## Data sources
 
-Every portfolio project uses public data: NIH RePORTER (including RCDC categories), iCite, OpenAlex, ClinicalTrials.gov, PatentsView, PubMed and PMC, CDC, and WHO.
+Research projects use public data: NIH RePORTER (including RCDC categories), iCite, OpenAlex, ClinicalTrials.gov, PatentsView, PubMed and PMC, CDC, and WHO. Projects outside research use FRED economic data, CDC PLACES, and public retail data.
 
 ---
 
