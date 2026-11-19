@@ -19,7 +19,7 @@ My current work is in research impact and bibliometrics. I lead a small team as 
 
 Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy aligned with NIH's data science strategy and applied it to 246,754 NIH project records from FY2016–FY2025. AI grew from 2.1% to 7.7% of projects and to $3.2B in extramural funding; the labels agree with hand coding at κ = 0.92.
 
-[See the project](skills/nlp-llms.qmd)
+[See the project](projects/nih-ds-taxonomy.qmd)
 :::
 
 ## Selected work

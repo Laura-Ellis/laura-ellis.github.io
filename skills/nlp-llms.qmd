@@ -47,7 +47,7 @@ AI went from 2.1% of NIH project records in FY2016 to 7.7% in FY2025, and from $
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}
 
-[Taxonomy repo: nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy)
+[Taxonomy repo: nih-ds-taxonomy](https://github.com/Laura-Ellis/nih-ds-taxonomy) · [All analyses using the taxonomy](../projects/nih-ds-taxonomy.qmd)
 
 ## Same skills, other domain: Public comments on an NIH policy
 

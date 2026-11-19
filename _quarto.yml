@@ -21,6 +21,7 @@ website:
   repo-url: https://github.com/Laura-Ellis/laura-ellis.github.io
   page-navigation: true
   navbar:
+    collapse-below: xl
     left:
       - href: index.md
         text: Home
@@ -36,6 +37,8 @@ website:
           - {href: skills/viz-bi.qmd, text: Data Visualization & BI}
           - {href: skills/cloud-mlops.qmd, text: Cloud & MLOps}
           - {href: skills/stats.qmd, text: Statistics & Probability}
+      - href: projects/nih-ds-taxonomy.qmd
+        text: NIH Data Science Taxonomy
       - href: projects/nih-ds-kpis.qmd
         text: NIH Data Science KPIs
       - href: methods.qmd

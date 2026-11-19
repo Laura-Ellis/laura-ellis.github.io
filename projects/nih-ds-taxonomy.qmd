@@ -1,0 +1,50 @@
+---
+title: "NIH Data Science Taxonomy"
+subtitle: "One taxonomy, several questions about data science at NIH"
+---
+
+I built a taxonomy aligned with NIH's Strategic Plan for Data Science and applied it to 246,754 NIH project records from FY2016 to FY2025. It labels each project for data science and AI methods, software, infrastructure, data sharing, responsible AI, and workforce. The labels agree with hand coding at κ = 0.92 for AI. Each analysis below starts from those labels and asks a different question.
+
+All data is public: the NIH RePORTER API and ExPORTER files, iCite, and OpenAlex. Code and full write-ups are in the [nih-ds-taxonomy repo](https://github.com/Laura-Ellis/nih-ds-taxonomy).
+
+## The taxonomy
+
+How can you find data science and AI in project text, and how good are the labels?
+
+Keyword matching flags candidates, a low-cost model labels them, and a second model settles the uncertain cases. Samples coded by hand check the result.
+
+[How it was built and validated](../skills/nlp-llms.qmd) · [Definitions](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/taxonomy/DEFINITIONS.md) · [Methodology](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/METHODOLOGY.md) · [How funding is calculated](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/FUNDING_METHODS.md)
+
+## Impact of AI on biomedical research
+
+Where does AI show up in NIH-funded research, and what do those projects produce?
+
+AI went from 2.1% of NIH projects in FY2016 to 7.7% in FY2025, and to $3.2B in extramural funding. AI projects publish more papers than matched projects, but link to patents and clinical trials at about the same rate.
+
+[Results](../skills/nlp-llms.qmd#results) · [Presentation (PDF)](../pdf/impact_of_ai_biomedical_research.pdf)
+
+## Who does data science at NIH
+
+Who does data science at NIH, how do they get there, and who do they work with?
+
+About 1 in 12 active NIH principal investigators now builds their work around data science, up from 1 in 16 in FY2016. People whose career development award was a data science project reach data science research three times as fast as other awardees, with no delay in reaching an R01. Infrastructure builders connect the most research communities.
+
+[PI analysis](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pi_analysis.md) · [Where new data science PIs came from](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/entrants.md) · [Pilot: crediting software, models, and data](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pilot_outputs_beyond_papers.md)
+
+## NIH data science KPIs
+
+Is NIH making progress on the five goals of its Strategic Plan for Data Science, and how would we know from public data alone?
+
+[NIH Data Science KPIs](nih-ds-kpis.qmd)
+
+## Coming next
+
+What is data science at NIH working on, where is it growing, where is it thin relative to need, and what draws it in? [Topics, funding opportunities, and gaps]{.todo}
+
+How was the taxonomy designed, how good is the dataset, and can it be made cheaper and more accurate? [Methods]{.todo}
+
+Where outside the United States does NIH fund data science, directly and through subawards? [Global research]{.todo}
+
+What have NIH's dedicated data science programs funded, and how do their projects and people compare? [Data science programs]{.todo}
+
+For each NIH institute or center, how did data science grow, what brought it there, and where could it do more? [Institute profiles]{.todo}
