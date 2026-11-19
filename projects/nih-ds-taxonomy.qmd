@@ -37,7 +37,9 @@ What is data science at NIH working on, where is it growing, where is it thin re
 
 Most growth follows institute priorities (dementia at NIA, opioids at NIDA, cancer at NCI); single-cell and spatial omics is the one method growing across institutes. Relative to U.S. disease burden, data science is thinnest in musculoskeletal, chronic respiratory, and heart disease, where NIH's overall funding is also light. Funding opportunities that ask for data science fund more of it.
 
-[Topics, funding opportunities, and gaps](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md)
+The presentation walks through the findings in eight slides: the main themes, the fastest-rising topics, a chart of data science funding against disease burden, what funding opportunities draw in, how well text matching finds them, what goes with patents and trials, and where NIH could direct data science next.
+
+[Topics, funding opportunities, and gaps](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md) · [Presentation (PDF)](../pdf/what_data_science_at_nih_works_on.pdf)
 
 ## NIH data science KPIs
 
@@ -53,4 +55,4 @@ Where outside the United States does NIH fund data science, directly and through
 
 What have NIH's dedicated data science programs funded, and how do their projects and people compare? [Data science programs]{.todo}
 
-For each NIH institute or center, how did data science grow, what brought it there, and where could it do more? [Institute profiles]{.todo}
+For each NIH institute or center, how did data science grow, what brought it there, and where could it do more? [Institute profiles](nih-ds-institutes.qmd)

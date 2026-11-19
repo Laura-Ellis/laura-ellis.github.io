@@ -1,0 +1,41 @@
+---
+title: "Data science at each NIH institute"
+subtitle: "Institute profiles from the NIH Data Science Taxonomy"
+---
+
+For each NIH institute or center, how did data science grow, what brought it there, and where could it do more?
+
+Each profile uses the same layout, so any institute can be compared with another or with the rest of NIH. It shows the institute's data science share over time against the rest of NIH, its fastest-rising topics, how its data science came in (targeted funding opportunities, training awards, and PIs from other institutes), and the areas where its data science share trails the rest of NIH.
+
+Profiles cover the 22 institutes and centers with at least 500 data science projects from FY2016 to FY2025. Counts under 11 are suppressed.
+
+[Back to the NIH Data Science Taxonomy](nih-ds-taxonomy.qmd)
+
+## Institutes and centers
+
+| Profile | Institute or center |
+|---|---|
+| [NCATS](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/ncats.md) | National Center for Advancing Translational Sciences |
+| [NCI](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nci.md) | National Cancer Institute |
+| [NEI](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nei.md) | National Eye Institute |
+| [NHGRI](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nhgri.md) | National Human Genome Research Institute |
+| [NHLBI](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nhlbi.md) | National Heart, Lung, and Blood Institute |
+| [NIA](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nia.md) | National Institute on Aging |
+| [NIAAA](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/niaaa.md) | National Institute on Alcohol Abuse and Alcoholism |
+| [NIAID](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/niaid.md) | National Institute of Allergy and Infectious Diseases |
+| [NIAMS](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/niams.md) | National Institute of Arthritis and Musculoskeletal and Skin Diseases |
+| [NIBIB](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nibib.md) | National Institute of Biomedical Imaging and Bioengineering |
+| [NICHD](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nichd.md) | Eunice Kennedy Shriver National Institute of Child Health and Human Development |
+| [NIDA](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nida.md) | National Institute on Drug Abuse |
+| [NIDCD](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nidcd.md) | National Institute on Deafness and Other Communication Disorders |
+| [NIDCR](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nidcr.md) | National Institute of Dental and Craniofacial Research |
+| [NIDDK](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/niddk.md) | National Institute of Diabetes and Digestive and Kidney Diseases |
+| [NIEHS](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/niehs.md) | National Institute of Environmental Health Sciences |
+| [NIGMS](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nigms.md) | National Institute of General Medical Sciences |
+| [NIMH](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nimh.md) | National Institute of Mental Health |
+| [NIMHD](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nimhd.md) | National Institute on Minority Health and Health Disparities |
+| [NINDS](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/ninds.md) | National Institute of Neurological Disorders and Stroke |
+| [NLM](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/nlm.md) | National Library of Medicine |
+| [OD](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/institutes/od.md) | NIH Office of the Director |
+
+**Source:** NIH RePORTER API, FY2016 to FY2025, by administering institute. Labels come from the NIH Data Science Taxonomy.
