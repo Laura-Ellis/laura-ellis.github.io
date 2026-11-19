@@ -31,6 +31,14 @@ About 1 in 12 active NIH principal investigators now builds their work around da
 
 [PI analysis](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pi_analysis.md) · [Where new data science PIs came from](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/entrants.md) · [Pilot: crediting software, models, and data](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pilot_outputs_beyond_papers.md)
 
+## What data science at NIH works on
+
+What is data science at NIH working on, where is it growing, where is it thin relative to need, and what draws it in?
+
+Most growth follows institute priorities (dementia at NIA, opioids at NIDA, cancer at NCI); single-cell and spatial omics is the one method growing across institutes. Relative to U.S. disease burden, data science is thinnest in musculoskeletal, chronic respiratory, and heart disease, where NIH's overall funding is also light. Funding opportunities that ask for data science fund more of it.
+
+[Topics, funding opportunities, and gaps](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md)
+
 ## NIH data science KPIs
 
 Is NIH making progress on the five goals of its Strategic Plan for Data Science, and how would we know from public data alone?
@@ -38,8 +46,6 @@ Is NIH making progress on the five goals of its Strategic Plan for Data Science,
 [NIH Data Science KPIs](nih-ds-kpis.qmd)
 
 ## Coming next
-
-What is data science at NIH working on, where is it growing, where is it thin relative to need, and what draws it in? [Topics, funding opportunities, and gaps]{.todo}
 
 How was the taxonomy designed, how good is the dataset, and can it be made cheaper and more accurate? [Methods]{.todo}
 
