@@ -29,7 +29,7 @@ Who does data science at NIH, how do they get there, and who do they work with?
 
 About 1 in 12 active NIH principal investigators now builds their work around data science, up from 1 in 16 in FY2016. People whose career development award was a data science project reach data science research three times as fast as other awardees, with no delay in reaching an R01. Infrastructure builders connect the most research communities.
 
-[PI analysis](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pi_analysis.md) · [Where new data science PIs came from](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/entrants.md) · [Pilot: crediting software, models, and data](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pilot_outputs_beyond_papers.md)
+[PI analysis](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pi_analysis.md) · [Where new data science PIs came from](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/entrants.md) · [Pilot: crediting software, models, and data](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/ds_pis/pilot_outputs_beyond_papers.md) · [Presentation (PDF)](../pdf/who_does_data_science_at_nih.pdf)
 
 ## What data science at NIH works on
 
