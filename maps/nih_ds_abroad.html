@@ -10,6 +10,8 @@
  select{font:inherit;padding:4px 6px;border:1px solid #CDC4B7;border-radius:6px;background:#FAF7F0;color:#4F5152}
  .fy{display:flex;gap:8px;align-items:center;font-weight:400}
  input[type=range]{accent-color:#596D69;width:130px}
+ .chk{flex-direction:row;align-items:center;gap:6px;padding-bottom:5px}
+ .chk input{accent-color:#596D69;width:16px;height:16px}
  .kpi{display:flex;gap:28px;margin:6px 0 2px}
  .kpi b{display:block;font-size:22px;color:#344D58}
  table{border-collapse:collapse;width:100%;margin-top:8px;font-size:13px}
@@ -21,15 +23,16 @@
  <label>Fiscal years <span class="fy">From <input id="fy0" type="range"> to <input id="fy1" type="range"> <span id="fyl"></span></span></label>
  <label>Institute <select id="ic"></select></label>
  <label>Data science area <select id="grp"></select></label>
+ <label class="chk"><input id="aionly" type="checkbox"> AI only</label>
 </div>
-<div class="kpi"><div><b id="k1"></b>data science funding abroad</div><div><b id="k2"></b>through subawards from U.S. partners</div><div><b id="k3"></b>countries</div></div>
+<div class="kpi"><div><b id="k1"></b>data science funding abroad</div><div><b id="k2"></b>through subawards from U.S. partners</div><div><b id="k3"></b>countries</div><div><b id="k4"></b>AI share of DS funding</div></div>
 <div id="map" style="height:520px"></div>
 <table id="reg"></table>
 <p class="note"><b>DS funding</b> = direct awards (attributed cost of data science projects with a recipient outside the U.S.) + subawards
 (first-tier amounts that U.S. prime recipients report passing to foreign partners on data science projects).
-<b>Subaward share</b> = subaward DS funding ÷ DS funding. Color uses a log scale. A project can sit in more than one data science area,
+<b>Subaward share</b> = subaward DS funding ÷ DS funding. <b>AI share</b> = AI funding ÷ DS funding, shown when the area is all data science. Color uses a log scale. A project can sit in more than one data science area,
 so areas add up to more than "All data science".<br>
-<b>DS</b> = data science. <b>FY</b> = federal fiscal year (FY2026 preliminary). <b>WHO</b> = World Health Organization regions.
+<b>DS</b> = data science. <b>AI</b> = artificial intelligence (taxonomy group). <b>FY</b> = federal fiscal year (FY2026 preliminary). <b>WHO</b> = World Health Organization regions.
 <b>FFATA</b> = Federal Funding Accountability and Transparency Act: only subawards of $30,000 or more must be reported, so subaward totals are a floor.
 Institutes: NCI cancer, NHLBI heart, lung and blood, NIA aging, NIAID allergy and infectious diseases, NICHD child health and human development,
 NIDA drug abuse, NIDDK diabetes, digestive and kidney diseases, NIGMS general medical sciences, NIMH mental health, NINDS neurological disorders and stroke.<br>
@@ -44,25 +47,30 @@ opt($("ic"), ["All NIH"].concat(D.ic.slice(0, -1), ["Other institutes"]));
 opt($("grp"), D.group);
 [$("fy0"), $("fy1")].forEach((el, i) => { el.min = D.fy[0]; el.max = D.fy[1]; el.value = D.fy[i]; el.step = 1; });
 const TICKS = [1e5, 1e6, 1e7, 1e8, 1e9];
+const ALL = D.group.indexOf("All data science"), AI = D.group.indexOf("Artificial intelligence");
 function draw() {
   let a = +$("fy0").value, b = +$("fy1").value; if (a > b) [a, b] = [b, a];
   $("fyl").textContent = "FY" + a + (a === b ? "" : "–FY" + b);
   const ic = +$("ic").value - 1, g = +$("grp").value, n = D.iso.length;
-  const dir = new Float64Array(n), sub = new Float64Array(n);
+  const dir = new Float64Array(n), sub = new Float64Array(n), ai = new Float64Array(n), showAI = g === ALL;
+  $("aionly").checked = g === AI;
   for (const r of D.rows) {
-    if (r[1] < a || r[1] > b || r[3] !== g || (ic >= 0 && r[2] !== ic)) continue;
-    dir[r[0]] += r[4] * 1e3; sub[r[0]] += r[5] * 1e3;
+    if (r[1] < a || r[1] > b || (ic >= 0 && r[2] !== ic)) continue;
+    if (r[3] === g) { dir[r[0]] += r[4] * 1e3; sub[r[0]] += r[5] * 1e3; }
+    if (showAI && r[3] === AI) ai[r[0]] += (r[4] + r[5]) * 1e3;
   }
   const loc = [], z = [], txt = [], reg = {};
-  let T = 0, S = 0;
+  let T = 0, S = 0, A = 0;
   for (let i = 0; i < n; i++) {
     const t = dir[i] + sub[i]; if (t <= 0) continue;
-    T += t; S += sub[i];
-    const R = reg[D.region[i]] ??= {t: 0, s: 0, c: 0}; R.t += t; R.s += sub[i]; R.c++;
+    T += t; S += sub[i]; A += ai[i];
+    const R = reg[D.region[i]] ??= {t: 0, s: 0, a: 0, c: 0}; R.t += t; R.s += sub[i]; R.a += ai[i]; R.c++;
     loc.push(D.iso[i]); z.push(Math.log10(t));
-    txt.push(`<b>${D.name[i]}</b><br>${D.region[i]}<br>DS funding: ${fmt(t)}<br>Direct: ${fmt(dir[i])}<br>Subawards: ${fmt(sub[i])} (${Math.round(100*sub[i]/t)}%)`);
+    txt.push(`<b>${D.name[i]}</b><br>${D.region[i]}<br>DS funding: ${fmt(t)}<br>Direct: ${fmt(dir[i])}<br>Subawards: ${fmt(sub[i])} (${Math.round(100*sub[i]/t)}%)` +
+      (showAI ? `<br>AI: ${ai[i] > 0 ? fmt(ai[i]) : "$0"} (${Math.round(100*ai[i]/t)}%)` : ""));
   }
   $("k1").textContent = fmt(T); $("k2").textContent = T ? Math.round(100*S/T) + "%" : "–"; $("k3").textContent = loc.length;
+  $("k4").textContent = showAI && T ? Math.round(100*A/T) + "%" : g === AI ? "100%" : "–";
   const zmin = 5, zmax = Math.max(8.5, ...z);
   Plotly.react("map", [{type: "choropleth", locationmode: "ISO-3", locations: loc, z: z, text: txt, hoverinfo: "text",
     zmin: zmin, zmax: zmax, colorscale: [[0, "#D6CCB4"], [0.5, "#8FA39F"], [1, "#344D58"]],
@@ -75,9 +83,10 @@ function draw() {
      hoverlabel: {bgcolor: "#FAF7F0", bordercolor: "#596D69", font: {color: "#4F5152"}}},
     {responsive: true, displaylogo: false, modeBarButtonsToRemove: ["select2d", "lasso2d"]});
   const rs = Object.entries(reg).sort((x, y) => y[1].t - x[1].t);
-  $("reg").innerHTML = "<tr><th>WHO region</th><th class=n>DS funding</th><th class=n>Subaward share</th><th class=n>Countries</th></tr>" +
-    rs.map(([k, v]) => `<tr><td>${k}</td><td class=n>${fmt(v.t)}</td><td class=n>${Math.round(100*v.s/v.t)}%</td><td class=n>${v.c}</td></tr>`).join("");
+  $("reg").innerHTML = "<tr><th>WHO region</th><th class=n>DS funding</th><th class=n>Subaward share</th>" + (showAI ? "<th class=n>AI share</th>" : "") + "<th class=n>Countries</th></tr>" +
+    rs.map(([k, v]) => `<tr><td>${k}</td><td class=n>${fmt(v.t)}</td><td class=n>${Math.round(100*v.s/v.t)}%</td>${showAI ? `<td class=n>${Math.round(100*v.a/v.t)}%</td>` : ""}<td class=n>${v.c}</td></tr>`).join("");
 }
 ["fy0", "fy1", "ic", "grp"].forEach(id => $(id).addEventListener("input", draw));
+$("aionly").addEventListener("change", e => { $("grp").value = e.target.checked ? AI : ALL; draw(); });
 draw();
 </script></body></html>

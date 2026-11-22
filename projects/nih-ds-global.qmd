@@ -15,11 +15,11 @@ I traced two routes. Direct awards go to an organization outside the U.S. Subawa
 - U.S. partners carry most of it. 58% went through subawards, and for 66 countries subawards were the only route.
 - Canada, the United Kingdom, Germany, Australia, and South Africa received the most.
 - Direct foreign awards are more often data science than NIH projects overall: 23.1% (95% CI 21.3% to 25.1%) vs. 17.7%.
-- DS-I Africa (Data Science for Health Discovery and Innovation in Africa), a Common Fund program that started in FY2021, accounts for 37% of direct data science funding to African organizations.
+- DS-I Africa (Harnessing Data Science for Health Discovery and Innovation in Africa), a Common Fund program that started in FY2021, accounts for 37% of direct data science funding to African organizations.
 
 ## Map
 
-Pick a range of fiscal years, an institute, or a data science area. Hover over a country for its direct and subaward funding. The table under the map adds up the WHO regions.
+Pick a range of fiscal years, an institute, or a data science area, or tick **AI only**. Hover over a country for its direct and subaward funding and, for all data science, the AI share. The table under the map adds up the WHO regions.
 
 ```{=html}
 <iframe src="../maps/nih_ds_abroad.html" title="Map of NIH data science funding abroad" style="width:100%;height:1050px;border:0" loading="lazy"></iframe>
