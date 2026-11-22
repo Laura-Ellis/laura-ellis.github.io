@@ -10,6 +10,7 @@ project:
     - fonts/
     - pdf/
     - images/
+    - maps/
 
 execute:
   freeze: auto

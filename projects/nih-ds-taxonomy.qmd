@@ -41,6 +41,14 @@ The presentation walks through the findings in eight slides: the main themes, th
 
 [Topics, funding opportunities, and gaps](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md) · [Presentation (PDF)](../pdf/what_data_science_at_nih_works_on.pdf)
 
+## Where NIH funds data science abroad
+
+Where outside the United States does NIH fund data science, directly and through subawards?
+
+NIH data science funding reached 115 countries from FY2016 to FY2026, and 58% of it went through U.S. partners as subawards. Direct foreign awards are more often data science than NIH projects overall (23% vs. 18%).
+
+[Map and findings](nih-ds-global.qmd) · [Presentation (PDF)](../pdf/where_nih_funds_data_science_abroad.pdf)
+
 ## NIH data science KPIs
 
 Is NIH making progress on the five goals of its Strategic Plan for Data Science, and how would we know from public data alone?
@@ -50,8 +58,6 @@ Is NIH making progress on the five goals of its Strategic Plan for Data Science,
 ## Coming next
 
 How was the taxonomy designed, how good is the dataset, and can it be made cheaper and more accurate? [Methods]{.todo}
-
-Where outside the United States does NIH fund data science, directly and through subawards? [Global research]{.todo}
 
 What have NIH's dedicated data science programs funded, and how do their projects and people compare? [Data science programs]{.todo}
 
