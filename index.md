@@ -17,7 +17,7 @@ My current work is in research impact and bibliometrics. I lead a small team as 
 ::: {.callout-note appearance="simple" icon="false"}
 ### NIH Data Science Taxonomy
 
-Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy aligned with NIH's data science strategy and applied it to 246,754 NIH project records from FY2016–FY2025. AI grew from 2.1% to 7.7% of projects and to $3.2B in extramural funding; the labels agree with hand coding at κ = 0.92.
+Where does data science show up across NIH projects, and how much of it is AI? I built a taxonomy aligned with NIH's data science strategy and applied it to 258,321 NIH project records from FY2016–FY2026 (FY2026 preliminary). AI grew from 2.2% of projects in FY2016 to 8.0% in FY2025, and to $3.5B in extramural funding; the labels agree with hand coding at κ = 0.92 for AI.
 
 [See the project](projects/nih-ds-taxonomy.qmd)
 :::
@@ -94,7 +94,7 @@ Random forest, XGBoost, and SHAP explanations.
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
 #### [NLP & LLMs](skills/nlp-llms.qmd)
-Taxonomy classification of 246,754 records.
+Taxonomy classification of 258,321 records.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-3}

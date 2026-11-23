@@ -13,23 +13,23 @@ subtitle: "Turning unstructured text into labeled, validated data"
 Where does AI show up in NIH-funded research, and what do those projects produce?
 
 ### Data
-NIH ExPORTER project records and abstracts, FY2016–FY2025: 246,754 records (parent projects and subprojects, each counted once). Taxonomy tested on a stratified sample of 749 projects (FY2019, FY2022, FY2025) and validated on 150 hand-coded projects.
+NIH RePORTER and ExPORTER project records and abstracts, FY2016–FY2026 (FY2026 preliminary): 258,321 records (parent projects and subprojects, each counted once). Taxonomy tested on a stratified sample of 749 projects (FY2019, FY2022, FY2025) and validated on 150 hand-coded projects.
 
 ### Method
-1. **Define** a taxonomy of 706 terms in 36 categories: data science and AI methods, software, infrastructure, data sharing, responsible AI, workforce, and research areas
-2. **Flag** projects with keywords (1 strong term or 2 weak terms): 50,481 of 246,754 records
+1. **Define** a taxonomy of 755 terms in 40 categories (8 dimensions): data science and AI methods, software, infrastructure, data sharing, responsible AI, workforce, and research areas
+2. **Flag** projects with keywords (1 strong term or 2 weak terms): 60,245 of 258,321 records
 3. **Label** each flagged project with Jev (typed questions with probabilities): substantive, mention, or none, plus AI role and categories
-4. **Resolve** calls under 90% confidence with ChatGPT (GPT-6 Luna): 29,671 texts, about $21 in total
+4. **Resolve** calls under 90% confidence with ChatGPT (GPT-6 Luna): 37,415 texts; about $24 in total with Jev
 5. **Validate** against 150 hand-coded projects and RCDC (Research, Condition, and Disease Categorization) categories
 
 Agreement is reported as Cohen's kappa: κ = (observed agreement − chance agreement) / (1 − chance agreement). 1 = perfect, 0 = chance. The pipeline reaches κ = 0.92 for AI and 0.86 for data science against hand coding.
 
 ### Results
-AI went from 2.1% of NIH project records in FY2016 to 7.7% in FY2025, and from $626M to $3.2B in extramural funding (8.5% of the total).
+AI went from 2.2% of NIH project records in FY2016 to 8.0% in FY2025, and from $671M to $3.5B in extramural funding (9.5% of the total). FY2026 so far (preliminary): 8.7% of records, 10.1% of funding.
 
-![](../images/ai_share_trend.png){fig-alt="Line chart: AI share of NIH projects rose from 2.1% in FY2016 to 7.7% in FY2025; AI share of extramural funding rose to 8.5%; data science share of projects rose from 12.5% to 20.7%."}
+![](../images/ai_share_trend.png){fig-alt="Line chart: AI share of NIH projects rose from 2.2% in FY2016 to 8.0% in FY2025 (8.7% in preliminary FY2026); AI share of extramural funding rose to 9.5% (10.1% in FY2026); data science share of projects rose from 14.8% to 23.0% (23.5% in FY2026)."}
 
-![](../images/ai_by_institute.png){fig-alt="Bar chart of extramural AI funding FY2016–2025 by institute: NCI $2.1B, NIA $1.9B, NIMH $1.8B with the highest share among the top five at 10.9%."}
+![](../images/ai_by_institute.png){fig-alt="Bar chart of extramural AI funding FY2016–FY2026 by institute, top 8: NCI $3.1B leads, then NIAID, NIA, and NHLBI at $2.3B each; NIMH puts the largest share into AI at 11.7%."}
 
 ![](../images/ai_method_area.png){fig-alt="Heatmap of AI method by research area: machine learning everywhere, computer vision concentrated in imaging, NLP in clinical care and EHR."}
 

@@ -13,7 +13,7 @@ subtitle: "Pipelines that turn public APIs into clean, reusable datasets"
 How many NIH projects use data science and AI methods each year, and where are they funded?
 
 ### Data
-NIH ExPORTER bulk files (projects, abstracts, publication links, patents, clinical studies), FY2016 to FY2025: 246,754 project records built from yearly applications. Accessed October 2026.
+NIH RePORTER API and ExPORTER bulk files (projects, abstracts, publication links, patents, clinical studies), FY2016 to FY2026 (FY2026 preliminary): 258,321 project records built from yearly applications. Accessed October 2026.
 
 ### Method
 - Bulk download, combined to parquet; the RePORTER API fills gaps with retries and rate limiting
@@ -24,7 +24,7 @@ NIH ExPORTER bulk files (projects, abstracts, publication links, patents, clinic
 - Packaged as a module (`src/reporter.py`) with tests, so the SQL, ML, and NLP pages reuse the same data
 
 ### Results
-68,198 records in FY2016 and 72,210 in FY2025, peaking at 78,185 in FY2023. Keywords flagged 50,481 records for model labeling; ChatGPT resolved 29,671 low-confidence calls for about $21.
+63,511 records active in FY2016 and 68,794 in FY2025, peaking at 73,934 in FY2023. Keywords flagged 60,245 records for model labeling; ChatGPT resolved 37,415 low-confidence calls, about $24 in total with Jev.
 
 [Chart: NIH projects per fiscal year, with hover and filter]{.todo}
 

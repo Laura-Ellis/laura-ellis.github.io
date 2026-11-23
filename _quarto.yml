@@ -11,6 +11,7 @@ project:
     - pdf/
     - images/
     - maps/
+    - dashboards/
 
 execute:
   freeze: auto

@@ -4,23 +4,25 @@ subtitle: "Is NIH making progress on its data science strategy? Indicators from 
 ---
 
 ::: {.callout-note appearance="simple"}
-**In progress.** The context KPIs and generative AI (G3.3) have values from FY2016–FY2025; the rest follow as their notebooks run. Text marked [like this]{.todo} is still to come.
+**24 of 28 KPIs have values**, FY2016–FY2026 (FY2026 preliminary). Four need Europe PMC, DataCite, or OpenAlex pulls: G1.2, G1.3, G3.2, O3.
 :::
 
 ## Question
 Is NIH making progress on the five goals of its Strategic Plan for Data Science, 2025–2030, and how would we know from public data alone?
 
 ## Data
-- NIH ExPORTER: projects, abstracts, publication links, patents, and clinical studies, FY2015–FY2025 (FY2008+ for investigator history)
+- NIH RePORTER and ExPORTER: projects, abstracts, publication links, patents, and clinical studies, FY2016–FY2026 (FY2026 preliminary)
 - [NIH Data Science Taxonomy](../skills/nlp-llms.qmd) labels for data science and AI
-- Europe PMC, DataCite, iCite, and OpenAlex for papers, datasets, citations, and open access
+- iCite for citation impact; Europe PMC, DataCite, and OpenAlex for papers, datasets, and open access (pending)
 
 ## Method
 The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each maps to a goal, uses a public source, and has a written formula and caveats. 23 come from NIH ExPORTER plus the taxonomy; 5 need other public APIs.
 
-- **Shares** = numerator / denominator, by fiscal year and Institute or Center (IC). Example: C1 = data science projects / all NIH projects
-- **Funding** = total cost in nominal USD, excluding subprojects; intramural (Z) and contract (N) projects excluded from denominators
-- **Outcomes** compare data science projects with other projects in the same fiscal year
+- **Records** = projects and center components, counted in each fiscal year they were funded, with the same labels as the [taxonomy](nih-ds-taxonomy.qmd) (keywords → Jev → ChatGPT). NIH institutes and centers only
+- **Shares** = numerator ÷ denominator, by fiscal year and administering Institute or Center (IC). Example: C1 = data science records ÷ all NIH records
+- **Funding** = extramural attributed cost in nominal USD, center costs counted once
+- **Outcomes** compare data science records with other records in the same fiscal year
+- These are counts of the full portfolio, not a sample, so there are no sampling intervals; labels agree with hand coding at κ = 0.92 (AI) and 0.86 (data science)
 
 | ID | KPI | Goal | Source |
 |---|---|---|---|
@@ -56,28 +58,35 @@ The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each ma
 **Abbreviations:** RCDC = Research, Condition, and Disease Categorization; RCR = Relative Citation Ratio; DMS = Data Management and Sharing; IDeA = Institutional Development Award states; EHR = electronic health record.
 
 ## Results
-First values, NIH extramural and intramural records, FY2016 to FY2025:
 
-| ID | KPI | FY2016 | FY2025 |
-|---|---|---|---|
-| C1 | Data science share of NIH projects | 12.5% | 20.7% |
-| C2 | Data science share of NIH extramural funding | 17.1% | 24.4% |
-| C3 | AI share of data science projects | 16.5% | 37.2% |
-| G3.3 | Generative AI projects | 23 | 296 |
-| O1 | Median papers per project, AI vs. matched (projects starting FY2016–2020) | 12 vs. 8 | |
+```{=html}
+<iframe src="../dashboards/nih_ds_kpis.html" title="Dashboard of NIH data science KPIs" style="width:100%;height:1500px;border:0" loading="lazy"></iframe>
+```
 
-Formulas: C1 = substantive data science records / all records; C2 = extramural attributed cost of data science records / all extramural attributed cost; C3 = substantive AI records / substantive data science records.
+Pick an institute or a goal, and click a KPI card for its trend. Selected values, all NIH:
 
-![](../images/ai_share_trend.png){fig-alt="Line chart: data science share of NIH projects rose from 12.5% to 20.7%, and AI from 2.1% to 7.7%, FY2016 to FY2025."}
+| ID | KPI | FY2016 | FY2025 | FY2026 (preliminary) |
+|---|---|---|---|---|
+| C1 | Data science share of NIH records | 14.8% | 23.0% | 23.5% |
+| C2 | Data science share of extramural funding | 21.2% | 27.4% | 27.6% |
+| C3 | AI share of data science records | 15.0% | 34.7% | 36.9% |
+| G2.1 | Human-derived data in data science records | 20.5% | 29.2% | 30.1% |
+| G3.3 | Generative AI share of AI records | 1.8% | 5.6% | 7.4% |
+| G3.4 | Responsible AI share of AI records | 13.7% | 19.7% | 21.3% |
+| G4.1 | Infrastructure share of data science funding | 41.3% | 35.7% | 34.0% |
+| G5.1 | Data science share of training and career records | 14.8% | 22.0% | 23.7% |
+| G5.5 | Data science capacity-building records | 299 | 591 | 571 |
+| O2 | Median RCR, data science vs. other papers (FY2023) | 1.18 vs. 1.13 | 1.16 vs. 1.07 | |
 
-[Dashboard: Tableau Public, with KPI cards by goal, trends, and filters for taxonomy group and IC]{.todo}
-
-[Interactive KPI trend charts]{.todo}
+Formulas: C1 = data science records ÷ all records; C2 = extramural attributed cost of data science records ÷ all extramural attributed cost; C3 = AI records ÷ data science records; G3.3 and G3.4 = AI records with the label ÷ AI records; G4.1 = cost of data science records with a cloud, HPC, platform, or data engineering label ÷ cost of data science records; G5.1 = data science training and career records (T, F, K, D43, R25) ÷ all training and career records. RCR = Relative Citation Ratio (1.0 = field median for NIH-funded papers). HPC = high-performance computing.
 
 ## Executive summary
-- **Data science is now a fifth of NIH projects**, up from an eighth in FY2016, and a quarter of extramural funding.
-- **AI drives most of the growth.** AI went from 1 in 6 data science projects to more than 1 in 3.
-- **Generative AI is small but doubling.** 296 projects in FY2025, twice the FY2023 count.
+- **Data science is now almost a quarter of NIH records** (23.0% in FY2025, up from 14.8%) and 27% of extramural funding.
+- **AI drives the growth.** AI went from 15% of data science records to 35%, and generative AI from 1.8% to 5.6% of AI records.
+- **Responsible AI is keeping pace:** 20% of AI records address fairness, privacy, or transparency, up from 14%.
+- **Training is following:** 22% of training and career records include data science, up from 15%.
+- **Room to grow:** infrastructure's share of data science funding (36%) and the share of data science outside the 50 largest institutions (45%) are where NIH's Goal 4 and Goal 5 investments can show next.
+- **Career awards to independence:** data science and other K awardees reach an R01-equivalent within 5 years at the same rate (32% and 33%), so data science training doesn't slow the path to independence.
 
 ## AI workflow log
 AI drafted the KPI list and code; I checked the plan's text for any published metrics (there are none beyond software sustainability), wrote unit tests for the KPI math, and ran the pipeline on mock data before real data. Full log: [reports/ai_workflow_log.md](https://github.com/Laura-Ellis/nih-ds-kpis/blob/main/reports/ai_workflow_log.md).

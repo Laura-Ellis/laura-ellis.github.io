@@ -3,7 +3,7 @@ title: "NIH Data Science Taxonomy"
 subtitle: "One taxonomy, several questions about data science at NIH"
 ---
 
-I built a taxonomy aligned with NIH's Strategic Plan for Data Science and applied it to 246,754 NIH project records from FY2016 to FY2025. It labels each project for data science and AI methods, software, infrastructure, data sharing, responsible AI, and workforce. The labels agree with hand coding at κ = 0.92 for AI. Each analysis below starts from those labels and asks a different question.
+I built a taxonomy aligned with NIH's Strategic Plan for Data Science and applied it to 258,321 NIH project records from FY2016 to FY2026 (FY2026 preliminary). It labels each project for data science and AI methods, software, infrastructure, data sharing, responsible AI, and workforce. The labels agree with hand coding at κ = 0.92 for AI and 0.86 for data science. Each analysis below starts from those labels and asks a different question.
 
 All data is public: the NIH RePORTER API and ExPORTER files, iCite, and OpenAlex. Code and full write-ups are in the [nih-ds-taxonomy repo](https://github.com/Laura-Ellis/nih-ds-taxonomy).
 
@@ -11,15 +11,15 @@ All data is public: the NIH RePORTER API and ExPORTER files, iCite, and OpenAlex
 
 How can you find data science and AI in project text, and how good are the labels?
 
-Keyword matching flags candidates, a low-cost model labels them, and a second model settles the uncertain cases. Samples coded by hand check the result.
+Keyword matching flags candidates, a low-cost model labels them, and a second model settles the uncertain cases. Samples coded by hand check the result. The full FY2016–FY2026 run cost about $24 in model calls, and a free local model comes close (κ 0.87 for AI). The presentation also covers projecting the preliminary year and matching projects to the funding opportunity they came through (95% in the top 10 picks).
 
-[How it was built and validated](../skills/nlp-llms.qmd) · [Definitions](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/taxonomy/DEFINITIONS.md) · [Methodology](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/METHODOLOGY.md) · [How funding is calculated](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/FUNDING_METHODS.md)
+[How it was built and validated](../skills/nlp-llms.qmd) · [Definitions](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/taxonomy/DEFINITIONS.md) · [Methodology](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/METHODOLOGY.md) · [How funding is calculated](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/FUNDING_METHODS.md) · [Presentation (PDF)](../pdf/how_the_nih_ds_taxonomy_was_built.pdf)
 
 ## Impact of AI on biomedical research
 
 Where does AI show up in NIH-funded research, and what do those projects produce?
 
-AI went from 2.1% of NIH projects in FY2016 to 7.7% in FY2025, and to $3.2B in extramural funding. AI projects publish more papers than matched projects, but link to patents and clinical trials at about the same rate.
+AI went from 2.2% of NIH projects in FY2016 to 8.0% in FY2025, and from $671M to $3.5B in extramural funding. AI projects publish more papers than matched projects, but link to patents and clinical trials at about the same rate.
 
 [Results](../skills/nlp-llms.qmd#results) · [Presentation (PDF)](../pdf/impact_of_ai_biomedical_research.pdf)
 
@@ -33,13 +33,13 @@ About 1 in 12 active NIH principal investigators now builds their work around da
 
 ## What data science at NIH works on
 
-What is data science at NIH working on, where is it growing, where is it thin relative to need, and what draws it in?
+What is data science at NIH working on, where is it growing, where does it have room to grow relative to need, and what draws it in?
 
-Most growth follows institute priorities (dementia at NIA, opioids at NIDA, cancer at NCI); single-cell and spatial omics is the one method growing across institutes. Relative to U.S. disease burden, data science is thinnest in musculoskeletal, chronic respiratory, and heart disease, where NIH's overall funding is also light. Funding opportunities that ask for data science fund more of it.
+Most growth follows institute priorities (dementia at NIA, opioids at NIDA, cancer at NCI); single-cell and spatial omics is the one method growing across institutes. Relative to U.S. disease burden, data science has the most room to grow in musculoskeletal, chronic respiratory, and heart disease, areas where NIH's overall funding can grow too. Funding opportunities that ask for data science fund more of it.
 
 The presentation walks through the findings in eight slides: the main themes, the fastest-rising topics, a chart of data science funding against disease burden, what funding opportunities draw in, how well text matching finds them, what goes with patents and trials, and where NIH could direct data science next.
 
-[Topics, funding opportunities, and gaps](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md) · [Presentation (PDF)](../pdf/what_data_science_at_nih_works_on.pdf)
+[Topics, funding opportunities, and room to grow](https://github.com/Laura-Ellis/nih-ds-taxonomy/blob/main/analyses/topics/topics_analysis.md) · [Presentation (PDF)](../pdf/what_data_science_at_nih_works_on.pdf)
 
 ## Where NIH funds data science abroad
 
@@ -57,8 +57,6 @@ Is NIH making progress on the five goals of its Strategic Plan for Data Science,
 
 ## Coming next
 
-How was the taxonomy designed, how good is the dataset, and can it be made cheaper and more accurate? [Methods]{.todo}
-
 What have NIH's dedicated data science programs funded, and how do their projects and people compare? [Data science programs]{.todo}
 
-For each NIH institute or center, how did data science grow, what brought it there, and where could it do more? [Institute profiles](nih-ds-institutes.qmd)
+For each NIH institute or center, how did data science grow, what brought it there, and where can it grow next? [Institute profiles](nih-ds-institutes.qmd)

@@ -13,7 +13,7 @@ subtitle: "Dashboards and charts that lead with the takeaway"
 Where is NIH investing in AI, by institute, state, and activity code, and how is that changing?
 
 ### Data
-NIH ExPORTER projects, FY2016–FY2025 (246,754 records), labeled with the data science taxonomy from the [NLP & LLMs](nlp-llms.qmd) page. A Tableau extract gives one row per record, fiscal year, and taxonomy group, so every view filters by group, institute (IC), activity code, state, and AI role.
+NIH RePORTER and ExPORTER projects, FY2016–FY2026 (258,321 records; FY2026 preliminary), labeled with the data science taxonomy from the [NLP & LLMs](nlp-llms.qmd) page. A Tableau extract gives one row per record, fiscal year, and taxonomy group, so every view filters by group, institute (IC), activity code, state, and AI role.
 
 ### Method
 - Tableau Public dashboard with filters for fiscal year, institute (IC), and activity code
@@ -22,16 +22,16 @@ NIH ExPORTER projects, FY2016–FY2025 (246,754 records), labeled with the data 
 ### Results
 Static versions of the main views (matplotlib), ahead of the Tableau Public build:
 
-![](../images/ai_by_institute.png){fig-alt="Bar chart of extramural AI funding FY2016–2025 by institute: NCI $2.1B leads; NIMH has the highest AI share among the top five at 10.9%."}
+![](../images/ai_by_institute.png){fig-alt="Bar chart of extramural AI funding FY2016–FY2026 by institute, top 8: NCI $3.1B leads; NIMH puts the largest share into AI at 11.7%."}
 
-![](../images/genai_by_fy.png){fig-alt="Bar chart: generative AI projects doubled from 149 in FY2023 to 296 in FY2025."}
+![](../images/genai_by_fy.png){fig-alt="Bar chart: generative AI projects grew 1.8 times, from 171 in FY2023 to 306 in FY2025, and 409 so far in preliminary FY2026."}
 
 [Embedded Tableau Public dashboard with group and IC filters]{.todo}
 
 ### Executive summary
-- **NCI spends the most on AI** ($2.1B over FY2016–2025), but AI is only 4.4% of its extramural portfolio.
-- **NIMH, NHGRI, and NIBIB lean in hardest:** AI is 11% to 18% of their extramural funding.
-- **NIAID has the largest extramural portfolio and one of the lowest AI shares** (2.2%).
+- **NCI spends the most on AI:** $3.1B over FY2016–FY2026, 5.9% of its extramural portfolio.
+- **NIMH, NHGRI, and NIBIB lead on share:** AI is 12% to 19% of their extramural funding.
+- **NIAID has the largest extramural portfolio** ($53.6B), so each point of AI share is worth the most there: AI is 4.3% today, with room to grow.
 
 ### AI workflow log
 [Prompts used, what the AI got wrong, how the output was checked]{.todo}
