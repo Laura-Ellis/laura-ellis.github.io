@@ -51,7 +51,7 @@ The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each ma
 | G5.5 | Data science capacity-building projects | Goal 5: Data science community | NIH ExPORTER + taxonomy |
 | O1 | Publications per data science project | Outcomes | NIH ExPORTER + taxonomy |
 | O2 | Citation impact of data science papers | Outcomes | iCite API |
-| O3 | Open access share of data science papers | Outcomes | OpenAlex (open_access.is_oa) by PMID |
+| O3 | Gold open access share of data science papers | Outcomes | OpenAlex (open_access.oa_status) by PMID |
 | O4 | Clinical trial link rate | Outcomes | NIH ExPORTER + taxonomy |
 | O5 | Patent link rate | Outcomes | NIH ExPORTER + taxonomy |
 
@@ -63,7 +63,7 @@ The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each ma
 <iframe src="../dashboards/nih_ds_kpis.html" title="Dashboard of NIH data science KPIs" style="width:100%;height:1500px;border:0" loading="lazy"></iframe>
 ```
 
-Pick an institute or a goal, and click a KPI card for its trend. With an institute selected, the gray line is all NIH and the table below the chart compares institutes. Every KPI except O3 has institute values. Selected values, all NIH:
+Pick an institute or a goal, and click a KPI card for its trend. With an institute selected, the gray line is all NIH and the table below the chart compares institutes. Every KPI except O3 has institute values. With an institute selected, the dashboard also shows this table and a short summary for that institute, with the all-NIH value under each KPI. Selected values, all NIH:
 
 | ID | KPI | FY2016 | FY2025 | FY2026 (preliminary) |
 |---|---|---|---|---|
@@ -80,8 +80,9 @@ Pick an institute or a goal, and click a KPI card for its trend. With an institu
 | G5.1 | Data science share of training and career records | 14.8% | 22.0% | 23.7% |
 | G5.5 | Data science capacity-building records | 299 | 591 | 571 |
 | O2 | Median RCR, data science vs. other papers (FY2023) | 1.18 vs. 1.13 | 1.16 vs. 1.07 | |
+| O3 | Gold open access share, data science vs. other papers (publication year; sample) | 20.5% vs. 16.6% | 34.0% vs. 32.2% | |
 
-Formulas: C1 = data science records ÷ all records; C2 = extramural attributed cost of data science records ÷ all extramural attributed cost; C3 = AI records ÷ data science records; G3.3 and G3.4 = AI records with the label ÷ AI records; G4.1 = cost of data science records with a cloud, HPC, platform, or data engineering label ÷ cost of data science records; G5.1 = data science training and career records (T, F, K, D43, R25) ÷ all training and career records. RCR = Relative Citation Ratio (1.0 = field median for NIH-funded papers). HPC = high-performance computing.
+Formulas: C1 = data science records ÷ all records; C2 = extramural attributed cost of data science records ÷ all extramural attributed cost; C3 = AI records ÷ data science records; G3.3 and G3.4 = AI records with the label ÷ AI records; G4.1 = cost of data science records with a cloud, HPC, platform, or data engineering label ÷ cost of data science records; G5.1 = data science training and career records (T, F, K, D43, R25) ÷ all training and career records. RCR = Relative Citation Ratio (1.0 = field median for NIH-funded papers). HPC = high-performance computing. O3 = papers published in a fully open access journal (OpenAlex oa_status gold) ÷ papers, from a random sample of 1,000 papers per year and group; 2026 is left out until OpenAlex classifies new papers.
 
 ## Executive summary
 - **Data science is now almost a quarter of NIH records** (23.0% in FY2025, up from 14.8%) and 27% of extramural funding.
@@ -91,6 +92,7 @@ Formulas: C1 = data science records ÷ all records; C2 = extramural attributed c
 - **Data sharing is becoming routine:** 65% of NIH-funded open access papers had a data availability statement in 2025, up from 23% in 2016. Institutes ranged from 58% (NEI) to 75% (FIC).
 - **Code sharing is growing, but from a low base:** 16% of papers link to GitHub, GitLab, Zenodo, or a similar archive, up from 3%.
 - **Datasets crediting NIH grew 17-fold** (252 in 2016 to 4,234 in 2025), mostly in general repositories (Zenodo, Dryad, figshare, Mendeley Data) and ICPSR.
+- **More papers are open from day one:** gold open access rose from 21% to 34% of data science papers between 2016 and 2025 (17% to 32% for other papers). Nearly all NIH-funded papers are open access in some form under the Public Access Policy.
 - **Room to grow:** infrastructure's share of data science funding (36%) and the share of data science outside the 50 largest NIH-funded grantee organizations, such as universities, academic medical centers, and research institutes (45%) are where NIH's Goal 4 and Goal 5 investments can show next.
 - **Career awards to independence:** data science and other K awardees reach an R01-equivalent within 5 years at the same rate (32% and 33%), so data science training doesn't slow the path to independence.
 
