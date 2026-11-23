@@ -4,7 +4,7 @@ subtitle: "Is NIH making progress on its data science strategy? Indicators from 
 ---
 
 ::: {.callout-note appearance="simple"}
-**24 of 28 KPIs have values**, FY2016–FY2026 (FY2026 preliminary). Four need Europe PMC, DataCite, or OpenAlex pulls: G1.2, G1.3, G3.2, O3.
+**All 28 KPIs have values**, FY2016–FY2026 (FY2026 preliminary). G1.2, G1.3, G3.2, and O3 come from Europe PMC, DataCite, and OpenAlex and use publication year.
 :::
 
 ## Question
@@ -13,7 +13,7 @@ Is NIH making progress on the five goals of its Strategic Plan for Data Science,
 ## Data
 - NIH RePORTER and ExPORTER: projects, abstracts, publication links, patents, and clinical studies, FY2016–FY2026 (FY2026 preliminary)
 - [NIH Data Science Taxonomy](../skills/nlp-llms.qmd) labels for data science and AI
-- iCite for citation impact; Europe PMC, DataCite, and OpenAlex for papers, datasets, and open access (pending)
+- iCite for citation impact; Europe PMC, DataCite, and OpenAlex for papers, datasets, and open access
 
 ## Method
 The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each maps to a goal, uses a public source, and has a written formula and caveats. 23 come from NIH ExPORTER plus the taxonomy; 5 need other public APIs.
@@ -85,7 +85,7 @@ Formulas: C1 = data science records ÷ all records; C2 = extramural attributed c
 - **AI drives the growth.** AI went from 15% of data science records to 35%, and generative AI from 1.8% to 5.6% of AI records.
 - **Responsible AI is keeping pace:** 20% of AI records address fairness, privacy, or transparency, up from 14%.
 - **Training is following:** 22% of training and career records include data science, up from 15%.
-- **Room to grow:** infrastructure's share of data science funding (36%) and the share of data science outside the 50 largest institutions (45%) are where NIH's Goal 4 and Goal 5 investments can show next.
+- **Room to grow:** infrastructure's share of data science funding (36%) and the share of data science outside the 50 largest NIH-funded grantee organizations, such as universities, academic medical centers, and research institutes (45%) are where NIH's Goal 4 and Goal 5 investments can show next.
 - **Career awards to independence:** data science and other K awardees reach an R01-equivalent within 5 years at the same rate (32% and 33%), so data science training doesn't slow the path to independence.
 
 ## AI workflow log
