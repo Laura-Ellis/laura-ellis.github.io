@@ -63,14 +63,17 @@ The plan sets goals but does not publish metrics, so I proposed 28 KPIs. Each ma
 <iframe src="../dashboards/nih_ds_kpis.html" title="Dashboard of NIH data science KPIs" style="width:100%;height:1500px;border:0" loading="lazy"></iframe>
 ```
 
-Pick an institute or a goal, and click a KPI card for its trend. Selected values, all NIH:
+Pick an institute or a goal, and click a KPI card for its trend. With an institute selected, the gray line is all NIH and the table below the chart compares institutes. Every KPI except O3 has institute values. Selected values, all NIH:
 
 | ID | KPI | FY2016 | FY2025 | FY2026 (preliminary) |
 |---|---|---|---|---|
 | C1 | Data science share of NIH records | 14.8% | 23.0% | 23.5% |
 | C2 | Data science share of extramural funding | 21.2% | 27.4% | 27.6% |
 | C3 | AI share of data science records | 15.0% | 34.7% | 36.9% |
+| G1.2 | Papers with a data availability statement (publication year) | 22.5% | 65.4% | 69.1% |
+| G1.3 | Datasets crediting NIH or an NIH institute (publication year) | 252 | 4,234 | 5,546 |
 | G2.1 | Human-derived data in data science records | 20.5% | 29.2% | 30.1% |
+| G3.2 | Papers that share code (publication year) | 2.9% | 15.5% | 16.5% |
 | G3.3 | Generative AI share of AI records | 1.8% | 5.6% | 7.4% |
 | G3.4 | Responsible AI share of AI records | 13.7% | 19.7% | 21.3% |
 | G4.1 | Infrastructure share of data science funding | 41.3% | 35.7% | 34.0% |
@@ -85,6 +88,9 @@ Formulas: C1 = data science records ÷ all records; C2 = extramural attributed c
 - **AI drives the growth.** AI went from 15% of data science records to 35%, and generative AI from 1.8% to 5.6% of AI records.
 - **Responsible AI is keeping pace:** 20% of AI records address fairness, privacy, or transparency, up from 14%.
 - **Training is following:** 22% of training and career records include data science, up from 15%.
+- **Data sharing is becoming routine:** 65% of NIH-funded open access papers had a data availability statement in 2025, up from 23% in 2016. Institutes ranged from 58% (NEI) to 75% (FIC).
+- **Code sharing is growing, but from a low base:** 16% of papers link to GitHub, GitLab, Zenodo, or a similar archive, up from 3%.
+- **Datasets crediting NIH grew 17-fold** (252 in 2016 to 4,234 in 2025), mostly in general repositories (Zenodo, Dryad, figshare, Mendeley Data) and ICPSR.
 - **Room to grow:** infrastructure's share of data science funding (36%) and the share of data science outside the 50 largest NIH-funded grantee organizations, such as universities, academic medical centers, and research institutes (45%) are where NIH's Goal 4 and Goal 5 investments can show next.
 - **Career awards to independence:** data science and other K awardees reach an R01-equivalent within 5 years at the same rate (32% and 33%), so data science training doesn't slow the path to independence.
 
